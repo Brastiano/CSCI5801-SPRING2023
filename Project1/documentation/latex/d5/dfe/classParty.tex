@@ -1,0 +1,329 @@
+\hypertarget{classParty}{}\doxysection{Party Class Reference}
+\label{classParty}\index{Party@{Party}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classParty_ad784ce89cab60d48f36f5e4456fc5f69}{Party}} (int num\+\_\+parties)
+\begin{DoxyCompactList}\small\item\em Constructor of class \mbox{\hyperlink{classParty}{Party}}. We only reserve the space for storages here, and will fill in the values later. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classParty_a85aa837e38a06690e6fee5087d7c7ad7}\label{classParty_a85aa837e38a06690e6fee5087d7c7ad7}} 
+\mbox{\hyperlink{classParty_a85aa837e38a06690e6fee5087d7c7ad7}{$\sim$\+Party}} ()
+\begin{DoxyCompactList}\small\item\em Destructor of class \mbox{\hyperlink{classParty}{Party}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classParty_a168975b303a7fe726d28d8b05f44a747}\label{classParty_a168975b303a7fe726d28d8b05f44a747}} 
+void {\bfseries Set\+Parties\+Names} (std\+::vector$<$ std\+::string $>$ names)
+\item 
+\mbox{\Hypertarget{classParty_ad924693f317081ead1ab35ff13696152}\label{classParty_ad924693f317081ead1ab35ff13696152}} 
+void {\bfseries Set\+Candidates\+Names} (std\+::vector$<$ std\+::vector$<$ std\+::string $>$$>$ names)
+\item 
+\mbox{\Hypertarget{classParty_a0364ed21e8e3115438175cfc6c3f08e7}\label{classParty_a0364ed21e8e3115438175cfc6c3f08e7}} 
+void {\bfseries Set\+Available\+Candidates} (std\+::vector$<$ int $>$ available\+\_\+candidates)
+\item 
+\mbox{\Hypertarget{classParty_af52d2f16af587ad785ad7b02c01a18c1}\label{classParty_af52d2f16af587ad785ad7b02c01a18c1}} 
+void {\bfseries Set\+Votes\+Amounts} (std\+::vector$<$ int $>$ votes\+\_\+amounts)
+\item 
+\mbox{\Hypertarget{classParty_a8af07f2ce64b3e94f4f3a3021c484eae}\label{classParty_a8af07f2ce64b3e94f4f3a3021c484eae}} 
+void {\bfseries Set\+Assigned\+Seats} (std\+::vector$<$ int $>$ assigned\+\_\+seats)
+\item 
+std\+::string \mbox{\hyperlink{classParty_a5e9ff098394bdf13d5bbed02257b0868}{Get\+Party\+Name}} (int party\+\_\+index) const
+\begin{DoxyCompactList}\small\item\em Function used to extract the name of a party at some desired index. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classParty_acbcf25e045df38d246453e68b82b7867}{Get\+Candidate\+Name}} (int party\+\_\+index, int candidate\+\_\+index) const
+\begin{DoxyCompactList}\small\item\em Function used to extract the name of a candidate in some desired party. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classParty_ad24871d59fa9d5120e6c8b73c6efcb6e}{Get\+Candidates\+Count}} (int party\+\_\+index)
+\begin{DoxyCompactList}\small\item\em Function used to extract the number of candidates the desired party has. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classParty_a288ea450e8e6bd25d843b3b90fd0d20d}{Get\+Available\+Candidates}} (int party\+\_\+index) const
+\begin{DoxyCompactList}\small\item\em Function used to extract the number of available candidates the desired party has. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classParty_a6441ab44869000d25f4b4397956f1036}{Get\+Votes\+Amount}} (int party\+\_\+index) const
+\begin{DoxyCompactList}\small\item\em Function used to extract the number of votes the desired party receives. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classParty_aa49dfbd5cc88d2edfe0460d0f102f216}{Get\+First\+Round\+Seats}} (int party\+\_\+index) const
+\begin{DoxyCompactList}\small\item\em Function used to extract the number of seats the desired party receives after first round. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classParty_a6a92d540e2ff6935ceb598542ea7c0e2}{Get\+Initial\+Votes\+Amount}} (int party\+\_\+index) const
+\begin{DoxyCompactList}\small\item\em Function used to extract the initial votes the party receives. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classParty_ab84bb65ef382499672d7ede7b1f89509}{Get\+Assigned\+Seats}} (int party\+\_\+index) const
+\begin{DoxyCompactList}\small\item\em Function used to extract the number of seats already assigned to the desired party. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classParty_ad1c30155a5d648ad85f0f418fc2437fc}{Get\+Change\+In\+Seats}} (int party\+\_\+index) const
+\begin{DoxyCompactList}\small\item\em Function used to record the change in seats of a party from whole number to remainder round. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classParty_a6153d28a2a66adc6f9cc772c099c3621}{Modify\+Votes}} (int party\+\_\+index, int amount)
+\begin{DoxyCompactList}\small\item\em Function used to modify the votes amount of a party. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classParty_a76be95579afe878c5066b9e600325f2f}{Modify\+Seats}} (int party\+\_\+index, int amount)
+\begin{DoxyCompactList}\small\item\em Function used to modify the seats amount of a party. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classParty_a7dc5f9b3accf062379cad388a6d63039}{Modify\+Change\+In\+Seats}} (int party\+\_\+index, int amount)
+\begin{DoxyCompactList}\small\item\em Function used to modify how many additional seats are assigned to a party. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classParty_ac1ea10e1996459320c8b51521dd57810}{Modify\+Available\+Candidates}} (int party\+\_\+index, int amount)
+\begin{DoxyCompactList}\small\item\em Function used to modify the number of available candidates of a party. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classParty_a32d30fb599c713930e1f5aec4a632c46}{Swap\+Parties}} (int first\+\_\+index, int second\+\_\+index)
+\begin{DoxyCompactList}\small\item\em Function used to swap the positions of two parties and their related information. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classParty_acb209b3205372ed538054d88c08fc492}\label{classParty_acb209b3205372ed538054d88c08fc492}} 
+void \mbox{\hyperlink{classParty_acb209b3205372ed538054d88c08fc492}{Store\+First\+Round\+Seats}} ()
+\begin{DoxyCompactList}\small\item\em Function used to store the information of parties after first round. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classParty_ad784ce89cab60d48f36f5e4456fc5f69}\label{classParty_ad784ce89cab60d48f36f5e4456fc5f69}} 
+\index{Party@{Party}!Party@{Party}}
+\index{Party@{Party}!Party@{Party}}
+\doxysubsubsection{\texorpdfstring{Party()}{Party()}}
+{\footnotesize\ttfamily Party\+::\+Party (\begin{DoxyParamCaption}\item[{int}]{num\+\_\+parties }\end{DoxyParamCaption})}
+
+
+
+Constructor of class \mbox{\hyperlink{classParty}{Party}}. We only reserve the space for storages here, and will fill in the values later. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num\+\_\+parties} & Number of parties participating in the election \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classParty_ab84bb65ef382499672d7ede7b1f89509}\label{classParty_ab84bb65ef382499672d7ede7b1f89509}} 
+\index{Party@{Party}!GetAssignedSeats@{GetAssignedSeats}}
+\index{GetAssignedSeats@{GetAssignedSeats}!Party@{Party}}
+\doxysubsubsection{\texorpdfstring{GetAssignedSeats()}{GetAssignedSeats()}}
+{\footnotesize\ttfamily int Party\+::\+Get\+Assigned\+Seats (\begin{DoxyParamCaption}\item[{int}]{party\+\_\+index }\end{DoxyParamCaption}) const}
+
+
+
+Function used to extract the number of seats already assigned to the desired party. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em party\+\_\+index} & Index of the party whose seats count is wanted \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An integer representing the number of seats 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classParty_a288ea450e8e6bd25d843b3b90fd0d20d}\label{classParty_a288ea450e8e6bd25d843b3b90fd0d20d}} 
+\index{Party@{Party}!GetAvailableCandidates@{GetAvailableCandidates}}
+\index{GetAvailableCandidates@{GetAvailableCandidates}!Party@{Party}}
+\doxysubsubsection{\texorpdfstring{GetAvailableCandidates()}{GetAvailableCandidates()}}
+{\footnotesize\ttfamily int Party\+::\+Get\+Available\+Candidates (\begin{DoxyParamCaption}\item[{int}]{party\+\_\+index }\end{DoxyParamCaption}) const}
+
+
+
+Function used to extract the number of available candidates the desired party has. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em party\+\_\+index} & Index of the party whose candidate availability is wanted \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An integer representing the number of available candidates 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classParty_acbcf25e045df38d246453e68b82b7867}\label{classParty_acbcf25e045df38d246453e68b82b7867}} 
+\index{Party@{Party}!GetCandidateName@{GetCandidateName}}
+\index{GetCandidateName@{GetCandidateName}!Party@{Party}}
+\doxysubsubsection{\texorpdfstring{GetCandidateName()}{GetCandidateName()}}
+{\footnotesize\ttfamily std\+::string Party\+::\+Get\+Candidate\+Name (\begin{DoxyParamCaption}\item[{int}]{party\+\_\+index,  }\item[{int}]{candidate\+\_\+index }\end{DoxyParamCaption}) const}
+
+
+
+Function used to extract the name of a candidate in some desired party. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em party\+\_\+index} & Index of the party whose candidate\textquotesingle{} name is wanted \\
+\hline
+{\em candidate\+\_\+index} & Index of the candidate in the party whose name is wanted \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A string representing the name of the candidate 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classParty_ad24871d59fa9d5120e6c8b73c6efcb6e}\label{classParty_ad24871d59fa9d5120e6c8b73c6efcb6e}} 
+\index{Party@{Party}!GetCandidatesCount@{GetCandidatesCount}}
+\index{GetCandidatesCount@{GetCandidatesCount}!Party@{Party}}
+\doxysubsubsection{\texorpdfstring{GetCandidatesCount()}{GetCandidatesCount()}}
+{\footnotesize\ttfamily int Party\+::\+Get\+Candidates\+Count (\begin{DoxyParamCaption}\item[{int}]{party\+\_\+index }\end{DoxyParamCaption})}
+
+
+
+Function used to extract the number of candidates the desired party has. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em party\+\_\+index} & Index of the party whose candidate count is wanted \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An integer representing the number of candidates 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classParty_ad1c30155a5d648ad85f0f418fc2437fc}\label{classParty_ad1c30155a5d648ad85f0f418fc2437fc}} 
+\index{Party@{Party}!GetChangeInSeats@{GetChangeInSeats}}
+\index{GetChangeInSeats@{GetChangeInSeats}!Party@{Party}}
+\doxysubsubsection{\texorpdfstring{GetChangeInSeats()}{GetChangeInSeats()}}
+{\footnotesize\ttfamily int Party\+::\+Get\+Change\+In\+Seats (\begin{DoxyParamCaption}\item[{int}]{party\+\_\+index }\end{DoxyParamCaption}) const}
+
+
+
+Function used to record the change in seats of a party from whole number to remainder round. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em party\+\_\+index} & Index of the party \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classParty_aa49dfbd5cc88d2edfe0460d0f102f216}\label{classParty_aa49dfbd5cc88d2edfe0460d0f102f216}} 
+\index{Party@{Party}!GetFirstRoundSeats@{GetFirstRoundSeats}}
+\index{GetFirstRoundSeats@{GetFirstRoundSeats}!Party@{Party}}
+\doxysubsubsection{\texorpdfstring{GetFirstRoundSeats()}{GetFirstRoundSeats()}}
+{\footnotesize\ttfamily int Party\+::\+Get\+First\+Round\+Seats (\begin{DoxyParamCaption}\item[{int}]{party\+\_\+index }\end{DoxyParamCaption}) const}
+
+
+
+Function used to extract the number of seats the desired party receives after first round. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em party\+\_\+index} & Index of the party whose seats count is wanted \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An integer representing the number of assigned seats 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classParty_a6a92d540e2ff6935ceb598542ea7c0e2}\label{classParty_a6a92d540e2ff6935ceb598542ea7c0e2}} 
+\index{Party@{Party}!GetInitialVotesAmount@{GetInitialVotesAmount}}
+\index{GetInitialVotesAmount@{GetInitialVotesAmount}!Party@{Party}}
+\doxysubsubsection{\texorpdfstring{GetInitialVotesAmount()}{GetInitialVotesAmount()}}
+{\footnotesize\ttfamily int Party\+::\+Get\+Initial\+Votes\+Amount (\begin{DoxyParamCaption}\item[{int}]{party\+\_\+index }\end{DoxyParamCaption}) const}
+
+
+
+Function used to extract the initial votes the party receives. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em party\+\_\+index} & Index of the party whose initial votes count is wanted \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An integer representing the number of votes 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classParty_a5e9ff098394bdf13d5bbed02257b0868}\label{classParty_a5e9ff098394bdf13d5bbed02257b0868}} 
+\index{Party@{Party}!GetPartyName@{GetPartyName}}
+\index{GetPartyName@{GetPartyName}!Party@{Party}}
+\doxysubsubsection{\texorpdfstring{GetPartyName()}{GetPartyName()}}
+{\footnotesize\ttfamily std\+::string Party\+::\+Get\+Party\+Name (\begin{DoxyParamCaption}\item[{int}]{party\+\_\+index }\end{DoxyParamCaption}) const}
+
+
+
+Function used to extract the name of a party at some desired index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em party\+\_\+index} & Index of the party whose name is wanted \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A string representing the name of the party 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classParty_a6441ab44869000d25f4b4397956f1036}\label{classParty_a6441ab44869000d25f4b4397956f1036}} 
+\index{Party@{Party}!GetVotesAmount@{GetVotesAmount}}
+\index{GetVotesAmount@{GetVotesAmount}!Party@{Party}}
+\doxysubsubsection{\texorpdfstring{GetVotesAmount()}{GetVotesAmount()}}
+{\footnotesize\ttfamily int Party\+::\+Get\+Votes\+Amount (\begin{DoxyParamCaption}\item[{int}]{party\+\_\+index }\end{DoxyParamCaption}) const}
+
+
+
+Function used to extract the number of votes the desired party receives. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em party\+\_\+index} & Index of the party whose votes count is wanted \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An integer representing the number of votes 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classParty_ac1ea10e1996459320c8b51521dd57810}\label{classParty_ac1ea10e1996459320c8b51521dd57810}} 
+\index{Party@{Party}!ModifyAvailableCandidates@{ModifyAvailableCandidates}}
+\index{ModifyAvailableCandidates@{ModifyAvailableCandidates}!Party@{Party}}
+\doxysubsubsection{\texorpdfstring{ModifyAvailableCandidates()}{ModifyAvailableCandidates()}}
+{\footnotesize\ttfamily void Party\+::\+Modify\+Available\+Candidates (\begin{DoxyParamCaption}\item[{int}]{party\+\_\+index,  }\item[{int}]{amount }\end{DoxyParamCaption})}
+
+
+
+Function used to modify the number of available candidates of a party. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em party\+\_\+index} & Index of the party to be modified \\
+\hline
+{\em amount} & The number of candidates to be taken out \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classParty_a7dc5f9b3accf062379cad388a6d63039}\label{classParty_a7dc5f9b3accf062379cad388a6d63039}} 
+\index{Party@{Party}!ModifyChangeInSeats@{ModifyChangeInSeats}}
+\index{ModifyChangeInSeats@{ModifyChangeInSeats}!Party@{Party}}
+\doxysubsubsection{\texorpdfstring{ModifyChangeInSeats()}{ModifyChangeInSeats()}}
+{\footnotesize\ttfamily void Party\+::\+Modify\+Change\+In\+Seats (\begin{DoxyParamCaption}\item[{int}]{party\+\_\+index,  }\item[{int}]{amount }\end{DoxyParamCaption})}
+
+
+
+Function used to modify how many additional seats are assigned to a party. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em party\+\_\+index} & Index of the party \\
+\hline
+{\em amount} & The number of additional seats \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classParty_a76be95579afe878c5066b9e600325f2f}\label{classParty_a76be95579afe878c5066b9e600325f2f}} 
+\index{Party@{Party}!ModifySeats@{ModifySeats}}
+\index{ModifySeats@{ModifySeats}!Party@{Party}}
+\doxysubsubsection{\texorpdfstring{ModifySeats()}{ModifySeats()}}
+{\footnotesize\ttfamily void Party\+::\+Modify\+Seats (\begin{DoxyParamCaption}\item[{int}]{party\+\_\+index,  }\item[{int}]{amount }\end{DoxyParamCaption})}
+
+
+
+Function used to modify the seats amount of a party. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em party\+\_\+index} & Index of the party to be modified \\
+\hline
+{\em amount} & The number of seats to be added \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classParty_a6153d28a2a66adc6f9cc772c099c3621}\label{classParty_a6153d28a2a66adc6f9cc772c099c3621}} 
+\index{Party@{Party}!ModifyVotes@{ModifyVotes}}
+\index{ModifyVotes@{ModifyVotes}!Party@{Party}}
+\doxysubsubsection{\texorpdfstring{ModifyVotes()}{ModifyVotes()}}
+{\footnotesize\ttfamily void Party\+::\+Modify\+Votes (\begin{DoxyParamCaption}\item[{int}]{party\+\_\+index,  }\item[{int}]{amount }\end{DoxyParamCaption})}
+
+
+
+Function used to modify the votes amount of a party. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em party\+\_\+index} & Index of the party to be modified \\
+\hline
+{\em amount} & The number of votes to be taken out \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classParty_a32d30fb599c713930e1f5aec4a632c46}\label{classParty_a32d30fb599c713930e1f5aec4a632c46}} 
+\index{Party@{Party}!SwapParties@{SwapParties}}
+\index{SwapParties@{SwapParties}!Party@{Party}}
+\doxysubsubsection{\texorpdfstring{SwapParties()}{SwapParties()}}
+{\footnotesize\ttfamily void Party\+::\+Swap\+Parties (\begin{DoxyParamCaption}\item[{int}]{first\+\_\+index,  }\item[{int}]{second\+\_\+index }\end{DoxyParamCaption})}
+
+
+
+Function used to swap the positions of two parties and their related information. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em first\+\_\+index} & Index of the first party \\
+\hline
+{\em second\+\_\+index} & Index of the second party \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/party.\+h\item 
+src/party.\+cc\end{DoxyCompactItemize}

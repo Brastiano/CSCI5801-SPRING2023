@@ -1,0 +1,179 @@
+\hypertarget{classCandidate}{}\doxysection{Candidate Class Reference}
+\label{classCandidate}\index{Candidate@{Candidate}}
+
+
+\mbox{\hyperlink{classCandidate}{Candidate}} class. Primary function is to store a linked list of Ballots.  
+
+
+
+
+{\ttfamily \#include $<$candidate.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCandidate_ad4290328a2df08fdf71d287f0ae0cc69}{Candidate}} (std\+::string nm, std\+::string prt)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classCandidate}{Candidate}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCandidate_aa2747741fb662af5e8f3d01d1d1a43b6}{Candidate}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classCandidate}{Candidate}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCandidate_abe4abc93d07a28709079e4fbc2afbdab}{Init}} (std\+::string nm, std\+::string prt)
+\begin{DoxyCompactList}\small\item\em Initialize a candidate that was instantiated with the default constructor Candidates are created in arrays, so the default constructor is often used. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCandidate_a0a4b6bb86efed261930ad94e24fbebda}{Assign\+Ballot}} (\mbox{\hyperlink{classBallot}{Ballot}} $\ast$ballot)
+\begin{DoxyCompactList}\small\item\em Add a \mbox{\hyperlink{classBallot}{Ballot}} object to this candidate\textquotesingle{}s linked list. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classBallot}{Ballot}} $\ast$ \mbox{\hyperlink{classCandidate_abedd13cfb5f65f2f6b594bc4d830cfa4}{Remove\+Ballot}} ()
+\begin{DoxyCompactList}\small\item\em Remove a \mbox{\hyperlink{classBallot}{Ballot}} object from this candidate\textquotesingle{}s linked list. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classCandidate_a1158d8f7985a6b0465b949f149760da2}{Get\+Vote\+Count}} ()
+\begin{DoxyCompactList}\small\item\em Get the current number of votes belonging to this candidate. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classCandidate_ad7a62d5e273666067a336b1fa4350c30}{Get\+Vote\+I\+Ds}} ()
+\begin{DoxyCompactList}\small\item\em Get a comma separated string of all ballots belonging to this candidate. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classCandidate_a53ccc2dc6842d6293c58c3460ea38087}{name}}
+\begin{DoxyCompactList}\small\item\em candidate name \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classCandidate_a1262dab3ee29387b32fbc50891962574}{party}}
+\begin{DoxyCompactList}\small\item\em candidate party \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classCandidate}{Candidate}} class. Primary function is to store a linked list of Ballots. 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCandidate_ad4290328a2df08fdf71d287f0ae0cc69}\label{classCandidate_ad4290328a2df08fdf71d287f0ae0cc69}} 
+\index{Candidate@{Candidate}!Candidate@{Candidate}}
+\index{Candidate@{Candidate}!Candidate@{Candidate}}
+\doxysubsubsection{\texorpdfstring{Candidate()}{Candidate()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Candidate\+::\+Candidate (\begin{DoxyParamCaption}\item[{std\+::string}]{nm,  }\item[{std\+::string}]{prt }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classCandidate}{Candidate}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nm} & name of candidate \\
+\hline
+{\em prt} & party of candidate \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classCandidate_aa2747741fb662af5e8f3d01d1d1a43b6}{Candidate()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classCandidate_aa2747741fb662af5e8f3d01d1d1a43b6}\label{classCandidate_aa2747741fb662af5e8f3d01d1d1a43b6}} 
+\index{Candidate@{Candidate}!Candidate@{Candidate}}
+\index{Candidate@{Candidate}!Candidate@{Candidate}}
+\doxysubsubsection{\texorpdfstring{Candidate()}{Candidate()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Candidate\+::\+Candidate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classCandidate}{Candidate}} object. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classCandidate_ad4290328a2df08fdf71d287f0ae0cc69}{Candidate(std\+::string nm, std\+::string prt)}} 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCandidate_a0a4b6bb86efed261930ad94e24fbebda}\label{classCandidate_a0a4b6bb86efed261930ad94e24fbebda}} 
+\index{Candidate@{Candidate}!AssignBallot@{AssignBallot}}
+\index{AssignBallot@{AssignBallot}!Candidate@{Candidate}}
+\doxysubsubsection{\texorpdfstring{AssignBallot()}{AssignBallot()}}
+{\footnotesize\ttfamily void Candidate\+::\+Assign\+Ballot (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBallot}{Ballot}} $\ast$}]{ballot }\end{DoxyParamCaption})}
+
+
+
+Add a \mbox{\hyperlink{classBallot}{Ballot}} object to this candidate\textquotesingle{}s linked list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ballot} & \mbox{\hyperlink{classBallot}{Ballot}} object to append \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCandidate_a1158d8f7985a6b0465b949f149760da2}\label{classCandidate_a1158d8f7985a6b0465b949f149760da2}} 
+\index{Candidate@{Candidate}!GetVoteCount@{GetVoteCount}}
+\index{GetVoteCount@{GetVoteCount}!Candidate@{Candidate}}
+\doxysubsubsection{\texorpdfstring{GetVoteCount()}{GetVoteCount()}}
+{\footnotesize\ttfamily int Candidate\+::\+Get\+Vote\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the current number of votes belonging to this candidate. 
+
+\begin{DoxyReturn}{Returns}
+int vote count 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCandidate_ad7a62d5e273666067a336b1fa4350c30}\label{classCandidate_ad7a62d5e273666067a336b1fa4350c30}} 
+\index{Candidate@{Candidate}!GetVoteIDs@{GetVoteIDs}}
+\index{GetVoteIDs@{GetVoteIDs}!Candidate@{Candidate}}
+\doxysubsubsection{\texorpdfstring{GetVoteIDs()}{GetVoteIDs()}}
+{\footnotesize\ttfamily std\+::string Candidate\+::\+Get\+Vote\+I\+Ds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get a comma separated string of all ballots belonging to this candidate. 
+
+\begin{DoxyReturn}{Returns}
+std\+::string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCandidate_abe4abc93d07a28709079e4fbc2afbdab}\label{classCandidate_abe4abc93d07a28709079e4fbc2afbdab}} 
+\index{Candidate@{Candidate}!Init@{Init}}
+\index{Init@{Init}!Candidate@{Candidate}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void Candidate\+::\+Init (\begin{DoxyParamCaption}\item[{std\+::string}]{nm,  }\item[{std\+::string}]{prt }\end{DoxyParamCaption})}
+
+
+
+Initialize a candidate that was instantiated with the default constructor Candidates are created in arrays, so the default constructor is often used. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nm} & name of candidate \\
+\hline
+{\em prt} & party of candidate \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCandidate_abedd13cfb5f65f2f6b594bc4d830cfa4}\label{classCandidate_abedd13cfb5f65f2f6b594bc4d830cfa4}} 
+\index{Candidate@{Candidate}!RemoveBallot@{RemoveBallot}}
+\index{RemoveBallot@{RemoveBallot}!Candidate@{Candidate}}
+\doxysubsubsection{\texorpdfstring{RemoveBallot()}{RemoveBallot()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBallot}{Ballot}} $\ast$ Candidate\+::\+Remove\+Ballot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Remove a \mbox{\hyperlink{classBallot}{Ballot}} object from this candidate\textquotesingle{}s linked list. 
+
+\begin{DoxyReturn}{Returns}
+Ballot$\ast$ \mbox{\hyperlink{classBallot}{Ballot}} pointer so that the \mbox{\hyperlink{classBallot}{Ballot}} can be reassigned 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classCandidate_a53ccc2dc6842d6293c58c3460ea38087}\label{classCandidate_a53ccc2dc6842d6293c58c3460ea38087}} 
+\index{Candidate@{Candidate}!name@{name}}
+\index{name@{name}!Candidate@{Candidate}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily std\+::string Candidate\+::name}
+
+
+
+candidate name 
+
+\mbox{\Hypertarget{classCandidate_a1262dab3ee29387b32fbc50891962574}\label{classCandidate_a1262dab3ee29387b32fbc50891962574}} 
+\index{Candidate@{Candidate}!party@{party}}
+\index{party@{party}!Candidate@{Candidate}}
+\doxysubsubsection{\texorpdfstring{party}{party}}
+{\footnotesize\ttfamily std\+::string Candidate\+::party}
+
+
+
+candidate party 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/candidate.\+h\item 
+src/candidate.\+cc\end{DoxyCompactItemize}

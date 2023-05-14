@@ -1,0 +1,195 @@
+\hypertarget{classBallot}{}\doxysection{Ballot Class Reference}
+\label{classBallot}\index{Ballot@{Ballot}}
+
+
+\mbox{\hyperlink{classBallot}{Ballot}} class used to store vote information.  
+
+
+
+
+{\ttfamily \#include $<$ballot.\+h$>$}
+
+
+
+Collaboration diagram for Ballot\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=168pt]{d4/df9/classBallot__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classBallot_af9078126260b3f58ea91f6b82797396b}{Ballot}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classBallot_a83cdf107b60529906b0486aae395779a}{Ballot}} (std\+::string line, int id)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classBallot}{Ballot}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classBallot_aefa9d5bd513661ec80585475f42eeb83}{$\sim$\+Ballot}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classBallot}{Ballot}} destructor. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classBallot_ad03b6d5259cc3116e2a90975dac2c75b}{Get\+Current\+Vote}} ()
+\begin{DoxyCompactList}\small\item\em Get the candidate index of the candidate to whom this ballot currently belongs. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classBallot_a3cf45f86857d1f0926db1f268e766248}{Increment}} ()
+\begin{DoxyCompactList}\small\item\em increment the vote index within this ballot to the next candidate \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classBallot_ab918e416b8b0981b82b20b9df1d7ba51}{Get\+ID}} ()
+\begin{DoxyCompactList}\small\item\em Gets the ballot id which identifies this ballot from the original input file. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classBallot}{Ballot}} $\ast$ \mbox{\hyperlink{classBallot_a5ece13799d9a754d44f1d0e9fc03815e}{Get\+Next}} ()
+\begin{DoxyCompactList}\small\item\em Get the next \mbox{\hyperlink{classBallot}{Ballot}} object in linked list. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBallot_ae584a8b687b85de527e32fe44e66bdd2}{Set\+Next}} (\mbox{\hyperlink{classBallot}{Ballot}} $\ast$ballot)
+\begin{DoxyCompactList}\small\item\em Set the next \mbox{\hyperlink{classBallot}{Ballot}} object in linked list. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classBallot_aee27806d03c0ecbc798575c724eb6f64}{Count\+Votes}} (std\+::string line)
+\begin{DoxyCompactList}\small\item\em Count how many candidates are ranked on the current ballot. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classBallot_a72ee2f79f96f77617ca0c6ff4f6aa249}\label{classBallot_a72ee2f79f96f77617ca0c6ff4f6aa249}} 
+\mbox{\hyperlink{classBallot}{Ballot}} $\ast$ \mbox{\hyperlink{classBallot_a72ee2f79f96f77617ca0c6ff4f6aa249}{next}}
+\begin{DoxyCompactList}\small\item\em pointer to next \mbox{\hyperlink{classBallot}{Ballot}} in linked list \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classBallot}{Ballot}} class used to store vote information. 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classBallot_af9078126260b3f58ea91f6b82797396b}\label{classBallot_af9078126260b3f58ea91f6b82797396b}} 
+\index{Ballot@{Ballot}!Ballot@{Ballot}}
+\index{Ballot@{Ballot}!Ballot@{Ballot}}
+\doxysubsubsection{\texorpdfstring{Ballot()}{Ballot()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Ballot\+::\+Ballot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor. 
+
+Create a new \mbox{\hyperlink{classBallot}{Ballot}} object \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classBallot_a83cdf107b60529906b0486aae395779a}{Ballot(std\+::string line, int id)}} This default constructor is only used to instantiate temporary \mbox{\hyperlink{classBallot}{Ballot}} pointers 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classBallot_a83cdf107b60529906b0486aae395779a}\label{classBallot_a83cdf107b60529906b0486aae395779a}} 
+\index{Ballot@{Ballot}!Ballot@{Ballot}}
+\index{Ballot@{Ballot}!Ballot@{Ballot}}
+\doxysubsubsection{\texorpdfstring{Ballot()}{Ballot()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Ballot\+::\+Ballot (\begin{DoxyParamCaption}\item[{std\+::string}]{line,  }\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classBallot}{Ballot}} object. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classBallot_af9078126260b3f58ea91f6b82797396b}{Ballot()}} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em line} & full string of ballot information from the input file \\
+\hline
+{\em id} & index of this ballot in the ballot file \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBallot_aefa9d5bd513661ec80585475f42eeb83}\label{classBallot_aefa9d5bd513661ec80585475f42eeb83}} 
+\index{Ballot@{Ballot}!````~Ballot@{$\sim$Ballot}}
+\index{````~Ballot@{$\sim$Ballot}!Ballot@{Ballot}}
+\doxysubsubsection{\texorpdfstring{$\sim$Ballot()}{~Ballot()}}
+{\footnotesize\ttfamily Ballot\+::$\sim$\+Ballot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classBallot}{Ballot}} destructor. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classBallot_aee27806d03c0ecbc798575c724eb6f64}\label{classBallot_aee27806d03c0ecbc798575c724eb6f64}} 
+\index{Ballot@{Ballot}!CountVotes@{CountVotes}}
+\index{CountVotes@{CountVotes}!Ballot@{Ballot}}
+\doxysubsubsection{\texorpdfstring{CountVotes()}{CountVotes()}}
+{\footnotesize\ttfamily int Ballot\+::\+Count\+Votes (\begin{DoxyParamCaption}\item[{std\+::string}]{line }\end{DoxyParamCaption})}
+
+
+
+Count how many candidates are ranked on the current ballot. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em line} & from ballot input file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int number of candidates ranked 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBallot_ad03b6d5259cc3116e2a90975dac2c75b}\label{classBallot_ad03b6d5259cc3116e2a90975dac2c75b}} 
+\index{Ballot@{Ballot}!GetCurrentVote@{GetCurrentVote}}
+\index{GetCurrentVote@{GetCurrentVote}!Ballot@{Ballot}}
+\doxysubsubsection{\texorpdfstring{GetCurrentVote()}{GetCurrentVote()}}
+{\footnotesize\ttfamily int Ballot\+::\+Get\+Current\+Vote (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the candidate index of the candidate to whom this ballot currently belongs. 
+
+\begin{DoxyReturn}{Returns}
+int candidate \char`\"{}global\char`\"{} index 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBallot_ab918e416b8b0981b82b20b9df1d7ba51}\label{classBallot_ab918e416b8b0981b82b20b9df1d7ba51}} 
+\index{Ballot@{Ballot}!GetID@{GetID}}
+\index{GetID@{GetID}!Ballot@{Ballot}}
+\doxysubsubsection{\texorpdfstring{GetID()}{GetID()}}
+{\footnotesize\ttfamily int Ballot\+::\+Get\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the ballot id which identifies this ballot from the original input file. 
+
+\begin{DoxyReturn}{Returns}
+int ballot id 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBallot_a5ece13799d9a754d44f1d0e9fc03815e}\label{classBallot_a5ece13799d9a754d44f1d0e9fc03815e}} 
+\index{Ballot@{Ballot}!GetNext@{GetNext}}
+\index{GetNext@{GetNext}!Ballot@{Ballot}}
+\doxysubsubsection{\texorpdfstring{GetNext()}{GetNext()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBallot}{Ballot}} $\ast$ Ballot\+::\+Get\+Next (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the next \mbox{\hyperlink{classBallot}{Ballot}} object in linked list. 
+
+\begin{DoxyReturn}{Returns}
+Ballot$\ast$ next entry in linked list 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBallot_a3cf45f86857d1f0926db1f268e766248}\label{classBallot_a3cf45f86857d1f0926db1f268e766248}} 
+\index{Ballot@{Ballot}!Increment@{Increment}}
+\index{Increment@{Increment}!Ballot@{Ballot}}
+\doxysubsubsection{\texorpdfstring{Increment()}{Increment()}}
+{\footnotesize\ttfamily int Ballot\+::\+Increment (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+increment the vote index within this ballot to the next candidate 
+
+\begin{DoxyReturn}{Returns}
+int new active candidate index 
+
+-\/1 if no candidates remain
+\end{DoxyReturn}
+There is no guarantee that the returned candidate is still valid This needs to be checked at the candidate level \mbox{\Hypertarget{classBallot_ae584a8b687b85de527e32fe44e66bdd2}\label{classBallot_ae584a8b687b85de527e32fe44e66bdd2}} 
+\index{Ballot@{Ballot}!SetNext@{SetNext}}
+\index{SetNext@{SetNext}!Ballot@{Ballot}}
+\doxysubsubsection{\texorpdfstring{SetNext()}{SetNext()}}
+{\footnotesize\ttfamily void Ballot\+::\+Set\+Next (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBallot}{Ballot}} $\ast$}]{ballot }\end{DoxyParamCaption})}
+
+
+
+Set the next \mbox{\hyperlink{classBallot}{Ballot}} object in linked list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ballot} & pointer to \mbox{\hyperlink{classBallot}{Ballot}} object to be appended on LL \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/ballot.\+h\item 
+src/ballot.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,158 @@
+\hypertarget{classCli}{}\doxysection{Cli Class Reference}
+\label{classCli}\index{Cli@{Cli}}
+
+
+C\+LI (Command Line Interface) class. Primary function is to handle user/system interaction.  
+
+
+
+
+{\ttfamily \#include $<$cli.\+h$>$}
+
+
+
+Collaboration diagram for Cli\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCli_ac29543785f7561ea99e6a6d05e374ab6}{Cli}} (\mbox{\hyperlink{classController}{Controller}} \&controller)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classCli}{Cli}} object. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classCli_a0dc17fb95739fcf395a9c66332618719}{$\sim$\+Cli}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classCli}{Cli}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCli_a70a0f5ed780945c5e5201a7b75027fd3}{Set\+Layout1}} ()
+\begin{DoxyCompactList}\small\item\em Set the interface to Layout 1 (date and input file name entry) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCli_a04214f3c8a5aeef7384b0a39c1e100ec}{Set\+Layout2}} (std\+::string election\+\_\+type, std\+::string num\+\_\+candidates, std\+::string candidates, std\+::string ballot\+\_\+quantity)
+\begin{DoxyCompactList}\small\item\em Set the interface to Layout 2 (With \mbox{\hyperlink{classIR}{IR}} parameters) (header display and user confirmation) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCli_ab3bfaff146ddcfad7e2503e4d6fc9af0}{Set\+Layout2}} (std\+::string election\+\_\+type, std\+::string num\+\_\+parties, std\+::string parties, std\+::string seat\+\_\+quantity, std\+::string ballot\+\_\+quantity)
+\begin{DoxyCompactList}\small\item\em Set the interface to Layout 2 (With \mbox{\hyperlink{classCPL}{C\+PL}} parameters) (header display and user confirmation) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCli_acd55bd9f7a25a61f5d72314b779becd7}\label{classCli_acd55bd9f7a25a61f5d72314b779becd7}} 
+void \mbox{\hyperlink{classCli_acd55bd9f7a25a61f5d72314b779becd7}{Set\+Layout3}} ()
+\begin{DoxyCompactList}\small\item\em Set the interface to Layout 3 (Loading screen) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCli_a7733999e931279029f0a47a78741f88c}{Set\+Layout4}} (std\+::string top\+\_\+text, std\+::string bottom\+\_\+text)
+\begin{DoxyCompactList}\small\item\em Set the interface to Layout 4 (Results display) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCli_afa4e017c477800ae5109c7170c439b03}\label{classCli_afa4e017c477800ae5109c7170c439b03}} 
+void \mbox{\hyperlink{classCli_afa4e017c477800ae5109c7170c439b03}{Clear\+Console}} ()
+\begin{DoxyCompactList}\small\item\em Clears the Terminal/\+Console. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCli_ac7033254a704446c6d115052bc7f1a29}\label{classCli_ac7033254a704446c6d115052bc7f1a29}} 
+\mbox{\hyperlink{classController}{Controller}} $\ast$ \mbox{\hyperlink{classCli_ac7033254a704446c6d115052bc7f1a29}{controller\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Pointer to controller instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+C\+LI (Command Line Interface) class. Primary function is to handle user/system interaction. 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCli_ac29543785f7561ea99e6a6d05e374ab6}\label{classCli_ac29543785f7561ea99e6a6d05e374ab6}} 
+\index{Cli@{Cli}!Cli@{Cli}}
+\index{Cli@{Cli}!Cli@{Cli}}
+\doxysubsubsection{\texorpdfstring{Cli()}{Cli()}}
+{\footnotesize\ttfamily Cli\+::\+Cli (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classController}{Controller}} \&}]{controller }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classCli}{Cli}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em controller} & controller instance to link with \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCli_a0dc17fb95739fcf395a9c66332618719}\label{classCli_a0dc17fb95739fcf395a9c66332618719}} 
+\index{Cli@{Cli}!````~Cli@{$\sim$Cli}}
+\index{````~Cli@{$\sim$Cli}!Cli@{Cli}}
+\doxysubsubsection{\texorpdfstring{$\sim$Cli()}{~Cli()}}
+{\footnotesize\ttfamily Cli\+::$\sim$\+Cli (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destroy the \mbox{\hyperlink{classCli}{Cli}} object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCli_a70a0f5ed780945c5e5201a7b75027fd3}\label{classCli_a70a0f5ed780945c5e5201a7b75027fd3}} 
+\index{Cli@{Cli}!SetLayout1@{SetLayout1}}
+\index{SetLayout1@{SetLayout1}!Cli@{Cli}}
+\doxysubsubsection{\texorpdfstring{SetLayout1()}{SetLayout1()}}
+{\footnotesize\ttfamily void Cli\+::\+Set\+Layout1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Set the interface to Layout 1 (date and input file name entry) 
+
+The controller is queried to read the beginning of the input file. If that succeeds, controller is put in control of the program flow to read the full header information and proceed as it determines to from there. If the read fails, the user is informed that the file was invalid and the program loops to the beginning of this function to receive fresh input.\mbox{\Hypertarget{classCli_a04214f3c8a5aeef7384b0a39c1e100ec}\label{classCli_a04214f3c8a5aeef7384b0a39c1e100ec}} 
+\index{Cli@{Cli}!SetLayout2@{SetLayout2}}
+\index{SetLayout2@{SetLayout2}!Cli@{Cli}}
+\doxysubsubsection{\texorpdfstring{SetLayout2()}{SetLayout2()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Cli\+::\+Set\+Layout2 (\begin{DoxyParamCaption}\item[{std\+::string}]{election\+\_\+type,  }\item[{std\+::string}]{num\+\_\+candidates,  }\item[{std\+::string}]{candidates,  }\item[{std\+::string}]{ballot\+\_\+quantity }\end{DoxyParamCaption})}
+
+
+
+Set the interface to Layout 2 (With \mbox{\hyperlink{classIR}{IR}} parameters) (header display and user confirmation) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em election\+\_\+type} & String detailing the type of the election to be displayed (\char`\"{}\+I\+R\char`\"{}/\char`\"{}\+C\+P\+L\char`\"{}) \\
+\hline
+{\em num\+\_\+candidates} & String to be displayed detailing the number of candidates \\
+\hline
+{\em candidates} & String listing the candidates to be displayed \\
+\hline
+{\em ballot\+\_\+quantity} & String to be displayed detailing the number of ballots \\
+\hline
+\end{DoxyParams}
+If yes is entered, the flow of control is granted to the controller once more to process the election. Otherwise, the program cycles to the beginning with \mbox{\hyperlink{classCli_a70a0f5ed780945c5e5201a7b75027fd3}{Set\+Layout1()}}.\mbox{\Hypertarget{classCli_ab3bfaff146ddcfad7e2503e4d6fc9af0}\label{classCli_ab3bfaff146ddcfad7e2503e4d6fc9af0}} 
+\index{Cli@{Cli}!SetLayout2@{SetLayout2}}
+\index{SetLayout2@{SetLayout2}!Cli@{Cli}}
+\doxysubsubsection{\texorpdfstring{SetLayout2()}{SetLayout2()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Cli\+::\+Set\+Layout2 (\begin{DoxyParamCaption}\item[{std\+::string}]{election\+\_\+type,  }\item[{std\+::string}]{num\+\_\+parties,  }\item[{std\+::string}]{parties,  }\item[{std\+::string}]{seat\+\_\+quantity,  }\item[{std\+::string}]{ballot\+\_\+quantity }\end{DoxyParamCaption})}
+
+
+
+Set the interface to Layout 2 (With \mbox{\hyperlink{classCPL}{C\+PL}} parameters) (header display and user confirmation) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em election\+\_\+type} & String detailing the type of the election to be displayed (\char`\"{}\+I\+R\char`\"{}/\char`\"{}\+C\+P\+L\char`\"{}) \\
+\hline
+{\em num\+\_\+parties} & String to be displayed detailing the number of parties \\
+\hline
+{\em parties} & String listing the parties to be displayed \\
+\hline
+{\em seat\+\_\+quantity} & String detailing the number of seats \\
+\hline
+{\em ballot\+\_\+quantity} & String to be displayed detailing the number of ballots \\
+\hline
+\end{DoxyParams}
+If yes is entered, the flow of control is granted to the controller once more to process the election. Otherwise, the program cycles to the beginning with \mbox{\hyperlink{classCli_a70a0f5ed780945c5e5201a7b75027fd3}{Set\+Layout1()}}.\mbox{\Hypertarget{classCli_a7733999e931279029f0a47a78741f88c}\label{classCli_a7733999e931279029f0a47a78741f88c}} 
+\index{Cli@{Cli}!SetLayout4@{SetLayout4}}
+\index{SetLayout4@{SetLayout4}!Cli@{Cli}}
+\doxysubsubsection{\texorpdfstring{SetLayout4()}{SetLayout4()}}
+{\footnotesize\ttfamily void Cli\+::\+Set\+Layout4 (\begin{DoxyParamCaption}\item[{std\+::string}]{top\+\_\+text,  }\item[{std\+::string}]{bottom\+\_\+text }\end{DoxyParamCaption})}
+
+
+
+Set the interface to Layout 4 (Results display) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em top\+\_\+text} & string containing overview of election held (formatted by the inputter, not the cli!) \\
+\hline
+{\em bottom\+\_\+text} & string containing election statistical breakdown (formatted by the inputter, not the cli!) \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/cli.\+h\item 
+src/cli.\+cc\end{DoxyCompactItemize}

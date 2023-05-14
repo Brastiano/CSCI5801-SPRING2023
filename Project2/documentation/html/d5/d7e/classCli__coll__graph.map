@@ -1,0 +1,4 @@
+<map id="Cli" name="Cli">
+<area shape="rect" id="node1" title="CLI (Command Line Interface) class. Primary function is to handle user/system interaction." alt="" coords="29,95,68,121"/>
+<area shape="rect" id="node2" href="$d9/d85/classController.html" title="Controller class. Manages inteactions between user interface and election processing." alt="" coords="5,5,92,32"/>
+</map>

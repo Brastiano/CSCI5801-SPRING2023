@@ -1,0 +1,232 @@
+\hypertarget{classGui}{}\doxysection{Gui Class Reference}
+\label{classGui}\index{Gui@{Gui}}
+
+
+G\+UI (Graphical User Interface) class. Primary function is to handle user/system interaction graphically.  
+
+
+
+
+{\ttfamily \#include $<$gui.\+h$>$}
+
+
+
+Inheritance diagram for Gui\+:
+% FIG 0
+
+
+Collaboration diagram for Gui\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classGui_a85cc8c672723b51ae89e26af8a42d67a}{Gui}} (\mbox{\hyperlink{classController}{Controller}} \&controller, std\+::string arg\+\_\+date, std\+::string arg\+\_\+file\+\_\+name)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classGui}{Gui}} object. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classGui_a4fd8485d226f9b8a2ac2d81d7f0f3598}{$\sim$\+Gui}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classGui}{Gui}} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGui_ac46e408fe5f546b9d5c3d2626e0b94aa}\label{classGui_ac46e408fe5f546b9d5c3d2626e0b94aa}} 
+void \mbox{\hyperlink{classGui_ac46e408fe5f546b9d5c3d2626e0b94aa}{Set\+Layout1}} ()
+\begin{DoxyCompactList}\small\item\em Set the interface to Layout 1 (date and input file name entry) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGui_a4c429f01420c2331387b1b4609541109}{Set\+Layout2}} (std\+::string election\+\_\+type, std\+::string num\+\_\+candidates, std\+::string candidates, std\+::string ballot\+\_\+quantity)
+\begin{DoxyCompactList}\small\item\em Set the interface to Layout 2 (With \mbox{\hyperlink{classIR}{IR}} parameters) (header display and user confirmation) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGui_af39422083cdf925276a9d71810a9c601}{Set\+Layout2}} (std\+::string election\+\_\+type, std\+::string num\+\_\+parties, std\+::string parties, std\+::string seat\+\_\+quantity, std\+::string ballot\+\_\+quantity)
+\begin{DoxyCompactList}\small\item\em Set the interface to Layout 2 (With \mbox{\hyperlink{classCPL}{C\+PL}} parameters) (header display and user confirmation) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGui_ae93a72e59339c003a9d7fd2848a04fa2}\label{classGui_ae93a72e59339c003a9d7fd2848a04fa2}} 
+void \mbox{\hyperlink{classGui_ae93a72e59339c003a9d7fd2848a04fa2}{Set\+Layout3}} ()
+\begin{DoxyCompactList}\small\item\em Set the interface to Layout 3 (Loading screen) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGui_abe08b43295e3c40e41202d0b38528594}{Set\+Layout4}} (std\+::string top\+\_\+text, std\+::string bottom\+\_\+text)
+\begin{DoxyCompactList}\small\item\em Set the interface to Layout 4 (Results display) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classGui_ad4af4998f710fafaa16f75bba611d78c}{On\+Confirm1}} ()
+\begin{DoxyCompactList}\small\item\em Handles confirm button press from layout 1. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGui_a7f65ccf122152a4522473cef0177d30d}\label{classGui_a7f65ccf122152a4522473cef0177d30d}} 
+void \mbox{\hyperlink{classGui_a7f65ccf122152a4522473cef0177d30d}{On\+Return}} ()
+\begin{DoxyCompactList}\small\item\em Handles return button press from layout 2. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGui_a212e970b0054357290e828e062333c33}\label{classGui_a212e970b0054357290e828e062333c33}} 
+void \mbox{\hyperlink{classGui_a212e970b0054357290e828e062333c33}{On\+Confirm2}} ()
+\begin{DoxyCompactList}\small\item\em Handles confirm button press from layout 2. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGui_a07043663d367223f3493b6c4b3235875}\label{classGui_a07043663d367223f3493b6c4b3235875}} 
+void \mbox{\hyperlink{classGui_a07043663d367223f3493b6c4b3235875}{On\+Exit}} ()
+\begin{DoxyCompactList}\small\item\em Handles exit button press from layout 4. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGui_a4d63b2ec0a34feae6a66a3f2d1301f54}\label{classGui_a4d63b2ec0a34feae6a66a3f2d1301f54}} 
+\mbox{\hyperlink{classController}{Controller}} $\ast$ \mbox{\hyperlink{classGui_a4d63b2ec0a34feae6a66a3f2d1301f54}{controller\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Pointer to controller instance. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGui_a33e8c3c2e5d6a6a24159a7a7261f83cb}\label{classGui_a33e8c3c2e5d6a6a24159a7a7261f83cb}} 
+Gtk\+::\+Box \mbox{\hyperlink{classGui_a33e8c3c2e5d6a6a24159a7a7261f83cb}{interface\+\_\+}}
+\begin{DoxyCompactList}\small\item\em G\+T\+K\+MM Widget Box Instances -\/ act as containers for other widgets. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGui_a2452ab25c04bfe3b8366a9e231ea7d57}\label{classGui_a2452ab25c04bfe3b8366a9e231ea7d57}} 
+Gtk\+::\+Box {\bfseries layout\+\_\+1\+\_\+}
+\item 
+\mbox{\Hypertarget{classGui_a9077dc2139f64042c7ee35d95f977f0d}\label{classGui_a9077dc2139f64042c7ee35d95f977f0d}} 
+Gtk\+::\+Box {\bfseries layout\+\_\+2\+\_\+}
+\item 
+\mbox{\Hypertarget{classGui_ac5a312193f2aa5ed167eb976f51a058b}\label{classGui_ac5a312193f2aa5ed167eb976f51a058b}} 
+Gtk\+::\+Box {\bfseries layout\+\_\+3\+\_\+}
+\item 
+\mbox{\Hypertarget{classGui_a0614fae59857ac5b3c06c0eb843fbdf5}\label{classGui_a0614fae59857ac5b3c06c0eb843fbdf5}} 
+Gtk\+::\+Box {\bfseries layout\+\_\+4\+\_\+}
+\item 
+\mbox{\Hypertarget{classGui_a0d4654f07b6c9930eca7c5ad7f5f0315}\label{classGui_a0d4654f07b6c9930eca7c5ad7f5f0315}} 
+Gtk\+::\+Button \mbox{\hyperlink{classGui_a0d4654f07b6c9930eca7c5ad7f5f0315}{button\+\_\+confirm\+\_\+1\+\_\+}}
+\begin{DoxyCompactList}\small\item\em G\+T\+K\+MM Widget Button Instances -\/ Process presses. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGui_af8abe86acd4fb980cdacdcfec7c498b8}\label{classGui_af8abe86acd4fb980cdacdcfec7c498b8}} 
+Gtk\+::\+Button {\bfseries button\+\_\+confirm\+\_\+2\+\_\+}
+\item 
+\mbox{\Hypertarget{classGui_a9d22622501f60a135c4f8bbf17e6e959}\label{classGui_a9d22622501f60a135c4f8bbf17e6e959}} 
+Gtk\+::\+Button {\bfseries button\+\_\+return\+\_\+}
+\item 
+\mbox{\Hypertarget{classGui_abfc39eb6711f82e06aa11066dee85424}\label{classGui_abfc39eb6711f82e06aa11066dee85424}} 
+Gtk\+::\+Button {\bfseries button\+\_\+exit\+\_\+}
+\item 
+\mbox{\Hypertarget{classGui_aa89b56ce801d71e2fb6c390d7a4cad7b}\label{classGui_aa89b56ce801d71e2fb6c390d7a4cad7b}} 
+Gtk\+::\+Entry \mbox{\hyperlink{classGui_aa89b56ce801d71e2fb6c390d7a4cad7b}{input\+\_\+election\+\_\+date\+\_\+}}
+\begin{DoxyCompactList}\small\item\em G\+T\+K\+MM Widget Entry Instances -\/ take in user input. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGui_a81e279f0e6bead63d0e1a0a711a44c23}\label{classGui_a81e279f0e6bead63d0e1a0a711a44c23}} 
+Gtk\+::\+Entry {\bfseries input\+\_\+election\+\_\+file\+\_\+}
+\item 
+\mbox{\Hypertarget{classGui_ab6051aa70e30c3de1390b8f8d34d1041}\label{classGui_ab6051aa70e30c3de1390b8f8d34d1041}} 
+Gtk\+::\+Label \mbox{\hyperlink{classGui_ab6051aa70e30c3de1390b8f8d34d1041}{text\+\_\+title\+\_\+1\+\_\+}}
+\begin{DoxyCompactList}\small\item\em G\+T\+K\+MM Widget Label Instances -\/ Display text. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGui_a689f5b47760826bcf5f59c11be844a64}\label{classGui_a689f5b47760826bcf5f59c11be844a64}} 
+Gtk\+::\+Label {\bfseries text\+\_\+title\+\_\+2\+\_\+}
+\item 
+\mbox{\Hypertarget{classGui_a6b80ea32ffa1eeb764f611d04f815be0}\label{classGui_a6b80ea32ffa1eeb764f611d04f815be0}} 
+Gtk\+::\+Label {\bfseries text\+\_\+title\+\_\+3\+\_\+}
+\item 
+\mbox{\Hypertarget{classGui_a5f44281f94a2450d8eec81e1ed5214fe}\label{classGui_a5f44281f94a2450d8eec81e1ed5214fe}} 
+Gtk\+::\+Label {\bfseries text\+\_\+title\+\_\+4\+\_\+}
+\item 
+\mbox{\Hypertarget{classGui_a274ba0d1bae73a5f2be69cfce39b2411}\label{classGui_a274ba0d1bae73a5f2be69cfce39b2411}} 
+Gtk\+::\+Label {\bfseries text\+\_\+instruction\+\_\+}
+\item 
+\mbox{\Hypertarget{classGui_a1f6a568d0b04438884b8606885db0844}\label{classGui_a1f6a568d0b04438884b8606885db0844}} 
+Gtk\+::\+Label {\bfseries text\+\_\+header\+\_\+}
+\item 
+\mbox{\Hypertarget{classGui_a4aa74e537155f4f65191c06ca426a5cf}\label{classGui_a4aa74e537155f4f65191c06ca426a5cf}} 
+Gtk\+::\+Label {\bfseries text\+\_\+overview\+\_\+}
+\item 
+\mbox{\Hypertarget{classGui_a5a340ccfb708bd26580d5a82a2d2e650}\label{classGui_a5a340ccfb708bd26580d5a82a2d2e650}} 
+Gtk\+::\+Label {\bfseries text\+\_\+table\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+G\+UI (Graphical User Interface) class. Primary function is to handle user/system interaction graphically. 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classGui_a85cc8c672723b51ae89e26af8a42d67a}\label{classGui_a85cc8c672723b51ae89e26af8a42d67a}} 
+\index{Gui@{Gui}!Gui@{Gui}}
+\index{Gui@{Gui}!Gui@{Gui}}
+\doxysubsubsection{\texorpdfstring{Gui()}{Gui()}}
+{\footnotesize\ttfamily Gui\+::\+Gui (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classController}{Controller}} \&}]{controller,  }\item[{std\+::string}]{arg\+\_\+date,  }\item[{std\+::string}]{arg\+\_\+file\+\_\+name }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classGui}{Gui}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em controller} & controller instance to link with \\
+\hline
+{\em arg\+\_\+date} & string with optional launch argument for date \\
+\hline
+{\em arg\+\_\+file\+\_\+name} & string with optional launch argument for input file name \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGui_a4fd8485d226f9b8a2ac2d81d7f0f3598}\label{classGui_a4fd8485d226f9b8a2ac2d81d7f0f3598}} 
+\index{Gui@{Gui}!````~Gui@{$\sim$Gui}}
+\index{````~Gui@{$\sim$Gui}!Gui@{Gui}}
+\doxysubsubsection{\texorpdfstring{$\sim$Gui()}{~Gui()}}
+{\footnotesize\ttfamily Gui\+::$\sim$\+Gui (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destroy the \mbox{\hyperlink{classGui}{Gui}} object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classGui_ad4af4998f710fafaa16f75bba611d78c}\label{classGui_ad4af4998f710fafaa16f75bba611d78c}} 
+\index{Gui@{Gui}!OnConfirm1@{OnConfirm1}}
+\index{OnConfirm1@{OnConfirm1}!Gui@{Gui}}
+\doxysubsubsection{\texorpdfstring{OnConfirm1()}{OnConfirm1()}}
+{\footnotesize\ttfamily void Gui\+::\+On\+Confirm1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Handles confirm button press from layout 1. 
+
+The controller is queried to read the beginning of the input file. If that succeeds, controller is put in control of the program flow to read the full header information and proceed as it determines to from there. If the read fails, the user is informed that the file was invalid and the interface state is set back to \mbox{\hyperlink{classGui_ac46e408fe5f546b9d5c3d2626e0b94aa}{Set\+Layout1()}}.\mbox{\Hypertarget{classGui_a4c429f01420c2331387b1b4609541109}\label{classGui_a4c429f01420c2331387b1b4609541109}} 
+\index{Gui@{Gui}!SetLayout2@{SetLayout2}}
+\index{SetLayout2@{SetLayout2}!Gui@{Gui}}
+\doxysubsubsection{\texorpdfstring{SetLayout2()}{SetLayout2()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Gui\+::\+Set\+Layout2 (\begin{DoxyParamCaption}\item[{std\+::string}]{election\+\_\+type,  }\item[{std\+::string}]{num\+\_\+candidates,  }\item[{std\+::string}]{candidates,  }\item[{std\+::string}]{ballot\+\_\+quantity }\end{DoxyParamCaption})}
+
+
+
+Set the interface to Layout 2 (With \mbox{\hyperlink{classIR}{IR}} parameters) (header display and user confirmation) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em election\+\_\+type} & String detailing the type of the election to be displayed (\char`\"{}\+I\+R\char`\"{}/\char`\"{}\+C\+P\+L\char`\"{}) \\
+\hline
+{\em num\+\_\+candidates} & String to be displayed detailing the number of candidates \\
+\hline
+{\em candidates} & String listing the candidates to be displayed \\
+\hline
+{\em ballot\+\_\+quantity} & String to be displayed detailing the number of ballots \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGui_af39422083cdf925276a9d71810a9c601}\label{classGui_af39422083cdf925276a9d71810a9c601}} 
+\index{Gui@{Gui}!SetLayout2@{SetLayout2}}
+\index{SetLayout2@{SetLayout2}!Gui@{Gui}}
+\doxysubsubsection{\texorpdfstring{SetLayout2()}{SetLayout2()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Gui\+::\+Set\+Layout2 (\begin{DoxyParamCaption}\item[{std\+::string}]{election\+\_\+type,  }\item[{std\+::string}]{num\+\_\+parties,  }\item[{std\+::string}]{parties,  }\item[{std\+::string}]{seat\+\_\+quantity,  }\item[{std\+::string}]{ballot\+\_\+quantity }\end{DoxyParamCaption})}
+
+
+
+Set the interface to Layout 2 (With \mbox{\hyperlink{classCPL}{C\+PL}} parameters) (header display and user confirmation) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em election\+\_\+type} & String detailing the type of the election to be displayed (\char`\"{}\+I\+R\char`\"{}/\char`\"{}\+C\+P\+L\char`\"{}) \\
+\hline
+{\em num\+\_\+parties} & String to be displayed detailing the number of parties \\
+\hline
+{\em parties} & String listing the parties to be displayed \\
+\hline
+{\em seat\+\_\+quantity} & String detailing the number of seats \\
+\hline
+{\em ballot\+\_\+quantity} & String to be displayed detailing the number of ballots \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGui_abe08b43295e3c40e41202d0b38528594}\label{classGui_abe08b43295e3c40e41202d0b38528594}} 
+\index{Gui@{Gui}!SetLayout4@{SetLayout4}}
+\index{SetLayout4@{SetLayout4}!Gui@{Gui}}
+\doxysubsubsection{\texorpdfstring{SetLayout4()}{SetLayout4()}}
+{\footnotesize\ttfamily void Gui\+::\+Set\+Layout4 (\begin{DoxyParamCaption}\item[{std\+::string}]{top\+\_\+text,  }\item[{std\+::string}]{bottom\+\_\+text }\end{DoxyParamCaption})}
+
+
+
+Set the interface to Layout 4 (Results display) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em top\+\_\+text} & string containing overview of election held (formatted by the inputter, not the cli!) \\
+\hline
+{\em bottom\+\_\+text} & string containing election statistical breakdown (formatted by the inputter, not the cli!) \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/gui.\+h\item 
+src/gui.\+cc\end{DoxyCompactItemize}

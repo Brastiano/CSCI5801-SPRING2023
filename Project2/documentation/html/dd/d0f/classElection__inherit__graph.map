@@ -1,0 +1,5 @@
+<map id="Election" name="Election">
+<area shape="rect" id="node1" title=" " alt="" coords="25,5,99,32"/>
+<area shape="rect" id="node2" href="$d6/d5e/classCPL.html" title=" " alt="" coords="5,80,52,107"/>
+<area shape="rect" id="node3" href="$d9/d27/classIR.html" title="Specific strategy implementation of Election class for processing IR election logic." alt="" coords="76,80,115,107"/>
+</map>

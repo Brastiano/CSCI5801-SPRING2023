@@ -1,0 +1,166 @@
+\hypertarget{classIR}{}\doxysection{IR Class Reference}
+\label{classIR}\index{IR@{IR}}
+
+
+Specific strategy implementation of \mbox{\hyperlink{classElection}{Election}} class for processing \mbox{\hyperlink{classIR}{IR}} election logic.  
+
+
+
+
+{\ttfamily \#include $<$ir.\+h$>$}
+
+
+
+Inheritance diagram for IR\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=136pt]{dd/d54/classIR__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for IR\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=136pt]{d0/dc9/classIR__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classIR_ac601b615e93dc68ba87c53f30cfb4b71}{IR}} (int n\+\_\+cand, std\+::string all\+\_\+cand, int n\+\_\+ball)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classIR}{IR}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classIR_a50996a3d24992ac68fa0e51ccb9ba33d}{Reallocate}} (int idx\+\_\+rm)
+\begin{DoxyCompactList}\small\item\em Reallocate ballots from an eliminated canidate. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classIR_aa1ce397c0b35b1023928e10a6a6fd665}{Process\+Election}} (std\+::string \&results\+\_\+top, std\+::string \&results\+\_\+table)
+\begin{DoxyCompactList}\small\item\em runs the entire election, from inputing ballots to outputting an audit file and results \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classIR_a84510e4f74f5b4aa09111fcaacf0a03c}{Input\+Ballots}} ()
+\begin{DoxyCompactList}\small\item\em reads ballot file line by line, creates \mbox{\hyperlink{classBallot}{Ballot}} objects, and assigns them to candidates \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classIR_a9c1ff2e64a81b8878587e637848eb16e}{Get\+Candidate\+Name}} (int candidate\+\_\+index)
+\begin{DoxyCompactList}\small\item\em Getter for candidate names. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classIR_a2e658f4eaba741ef041175f714e45c21}{Valid\+Candidates}} ()
+\begin{DoxyCompactList}\small\item\em Counts number of candidates who have votes and are thus still in the election. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classIR_a6415b9f2257f961f77496d555625aa63}\label{classIR_a6415b9f2257f961f77496d555625aa63}} 
+void \mbox{\hyperlink{classIR_a6415b9f2257f961f77496d555625aa63}{Init\+Results\+Table}} ()
+\begin{DoxyCompactList}\small\item\em Create the headers of the results table. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classIR_ad05beaf6a7819ffd8651a0117372d15f}\label{classIR_ad05beaf6a7819ffd8651a0117372d15f}} 
+void \mbox{\hyperlink{classIR_ad05beaf6a7819ffd8651a0117372d15f}{Update\+Results\+Table}} ()
+\begin{DoxyCompactList}\small\item\em Add one round worth of information to the results table. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Specific strategy implementation of \mbox{\hyperlink{classElection}{Election}} class for processing \mbox{\hyperlink{classIR}{IR}} election logic. 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classIR_ac601b615e93dc68ba87c53f30cfb4b71}\label{classIR_ac601b615e93dc68ba87c53f30cfb4b71}} 
+\index{IR@{IR}!IR@{IR}}
+\index{IR@{IR}!IR@{IR}}
+\doxysubsubsection{\texorpdfstring{IR()}{IR()}}
+{\footnotesize\ttfamily I\+R\+::\+IR (\begin{DoxyParamCaption}\item[{int}]{n\+\_\+cand,  }\item[{std\+::string}]{all\+\_\+cand,  }\item[{int}]{n\+\_\+ball }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classIR}{IR}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n\+\_\+cand} & \\
+\hline
+{\em all\+\_\+cand} & \\
+\hline
+{\em n\+\_\+ball} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classIR_a9c1ff2e64a81b8878587e637848eb16e}\label{classIR_a9c1ff2e64a81b8878587e637848eb16e}} 
+\index{IR@{IR}!GetCandidateName@{GetCandidateName}}
+\index{GetCandidateName@{GetCandidateName}!IR@{IR}}
+\doxysubsubsection{\texorpdfstring{GetCandidateName()}{GetCandidateName()}}
+{\footnotesize\ttfamily std\+::string I\+R\+::\+Get\+Candidate\+Name (\begin{DoxyParamCaption}\item[{int}]{candidate\+\_\+index }\end{DoxyParamCaption})}
+
+
+
+Getter for candidate names. 
+
+\begin{DoxyReturn}{Returns}
+candidate name 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em candidate\+\_\+index} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classIR_a84510e4f74f5b4aa09111fcaacf0a03c}\label{classIR_a84510e4f74f5b4aa09111fcaacf0a03c}} 
+\index{IR@{IR}!InputBallots@{InputBallots}}
+\index{InputBallots@{InputBallots}!IR@{IR}}
+\doxysubsubsection{\texorpdfstring{InputBallots()}{InputBallots()}}
+{\footnotesize\ttfamily void I\+R\+::\+Input\+Ballots (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+reads ballot file line by line, creates \mbox{\hyperlink{classBallot}{Ballot}} objects, and assigns them to candidates 
+
+\mbox{\Hypertarget{classIR_aa1ce397c0b35b1023928e10a6a6fd665}\label{classIR_aa1ce397c0b35b1023928e10a6a6fd665}} 
+\index{IR@{IR}!ProcessElection@{ProcessElection}}
+\index{ProcessElection@{ProcessElection}!IR@{IR}}
+\doxysubsubsection{\texorpdfstring{ProcessElection()}{ProcessElection()}}
+{\footnotesize\ttfamily void I\+R\+::\+Process\+Election (\begin{DoxyParamCaption}\item[{std\+::string \&}]{results\+\_\+top,  }\item[{std\+::string \&}]{results\+\_\+table }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+runs the entire election, from inputing ballots to outputting an audit file and results 
+
+
+\begin{DoxyParams}{Parameters}
+{\em results\+\_\+top} & Summary of election results \\
+\hline
+{\em results\+\_\+table} & Tabulated results by candidate \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classElection_af8fcefff3f4384b48fedcb0bcee5fa48}{Election}}.
+
+\mbox{\Hypertarget{classIR_a50996a3d24992ac68fa0e51ccb9ba33d}\label{classIR_a50996a3d24992ac68fa0e51ccb9ba33d}} 
+\index{IR@{IR}!Reallocate@{Reallocate}}
+\index{Reallocate@{Reallocate}!IR@{IR}}
+\doxysubsubsection{\texorpdfstring{Reallocate()}{Reallocate()}}
+{\footnotesize\ttfamily void I\+R\+::\+Reallocate (\begin{DoxyParamCaption}\item[{int}]{idx\+\_\+rm }\end{DoxyParamCaption})}
+
+
+
+Reallocate ballots from an eliminated canidate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em idx\+\_\+rm} & candidate index of the removed candidate \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classIR_a2e658f4eaba741ef041175f714e45c21}\label{classIR_a2e658f4eaba741ef041175f714e45c21}} 
+\index{IR@{IR}!ValidCandidates@{ValidCandidates}}
+\index{ValidCandidates@{ValidCandidates}!IR@{IR}}
+\doxysubsubsection{\texorpdfstring{ValidCandidates()}{ValidCandidates()}}
+{\footnotesize\ttfamily int I\+R\+::\+Valid\+Candidates (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Counts number of candidates who have votes and are thus still in the election. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/ir.\+h\item 
+src/ir.\+cc\end{DoxyCompactItemize}

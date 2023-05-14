@@ -1,0 +1,23 @@
+var searchData=
+[
+  ['getassignedseats_119',['GetAssignedSeats',['../d5/dfe/classParty.html#ab84bb65ef382499672d7ede7b1f89509',1,'Party']]],
+  ['getavailablecandidates_120',['GetAvailableCandidates',['../d5/dfe/classParty.html#a288ea450e8e6bd25d843b3b90fd0d20d',1,'Party']]],
+  ['getcandidatename_121',['GetCandidateName',['../d9/d27/classIR.html#a9c1ff2e64a81b8878587e637848eb16e',1,'IR::GetCandidateName()'],['../d5/dfe/classParty.html#acbcf25e045df38d246453e68b82b7867',1,'Party::GetCandidateName()']]],
+  ['getcandidatescount_122',['GetCandidatesCount',['../d5/dfe/classParty.html#ad24871d59fa9d5120e6c8b73c6efcb6e',1,'Party']]],
+  ['getchangeinseats_123',['GetChangeInSeats',['../d5/dfe/classParty.html#ad1c30155a5d648ad85f0f418fc2437fc',1,'Party']]],
+  ['getcurrentvote_124',['GetCurrentVote',['../df/d9f/classBallot.html#ad03b6d5259cc3116e2a90975dac2c75b',1,'Ballot']]],
+  ['getfirstroundseats_125',['GetFirstRoundSeats',['../d5/dfe/classParty.html#aa49dfbd5cc88d2edfe0460d0f102f216',1,'Party']]],
+  ['getid_126',['GetID',['../df/d9f/classBallot.html#ab918e416b8b0981b82b20b9df1d7ba51',1,'Ballot']]],
+  ['getinitialvotesamount_127',['GetInitialVotesAmount',['../d5/dfe/classParty.html#a6a92d540e2ff6935ceb598542ea7c0e2',1,'Party']]],
+  ['getnext_128',['GetNext',['../df/d9f/classBallot.html#a5ece13799d9a754d44f1d0e9fc03815e',1,'Ballot']]],
+  ['getparties_129',['GetParties',['../d6/d5e/classCPL.html#a1b8f051ff9f31c6e76cfc63569d8b7a9',1,'CPL']]],
+  ['getpartyname_130',['GetPartyName',['../d5/dfe/classParty.html#a5e9ff098394bdf13d5bbed02257b0868',1,'Party']]],
+  ['getquota_131',['GetQuota',['../d6/d5e/classCPL.html#a2b14ce55202830ed218a0541cce5ab75',1,'CPL']]],
+  ['gettotalballots_132',['GetTotalBallots',['../d6/d5e/classCPL.html#a1feb4944cfe4c3e36a66f4445dad853d',1,'CPL']]],
+  ['gettotalparties_133',['GetTotalParties',['../d6/d5e/classCPL.html#a71b8f16fb9e8c1a9f4a0f16bd22c97c9',1,'CPL']]],
+  ['gettotalseats_134',['GetTotalSeats',['../d6/d5e/classCPL.html#a414ea313d7f277898fbffdfe7f05cf59',1,'CPL']]],
+  ['getvotecount_135',['GetVoteCount',['../d2/d1e/classCandidate.html#a1158d8f7985a6b0465b949f149760da2',1,'Candidate']]],
+  ['getvoteids_136',['GetVoteIDs',['../d2/d1e/classCandidate.html#ad7a62d5e273666067a336b1fa4350c30',1,'Candidate']]],
+  ['getvotesamount_137',['GetVotesAmount',['../d5/dfe/classParty.html#a6441ab44869000d25f4b4397956f1036',1,'Party']]],
+  ['gui_138',['Gui',['../d0/d42/classGui.html#a85cc8c672723b51ae89e26af8a42d67a',1,'Gui']]]
+];

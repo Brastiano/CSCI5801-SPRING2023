@@ -1,0 +1,5 @@
+<map id="Gui" name="Gui">
+<area shape="rect" id="node1" title="GUI (Graphical User Interface) class. Primary function is to handle user/system interaction graphical..." alt="" coords="96,95,140,121"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,5,111,32"/>
+<area shape="rect" id="node3" href="$d9/d85/classController.html" title="Controller class. Manages inteactions between user interface and election processing." alt="" coords="135,5,221,32"/>
+</map>

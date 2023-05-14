@@ -1,0 +1,338 @@
+\hypertarget{classCPL}{}\doxysection{C\+PL Class Reference}
+\label{classCPL}\index{CPL@{CPL}}
+
+
+Inheritance diagram for C\+PL\+:
+% FIG 0
+
+
+Collaboration diagram for C\+PL\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCPL_a65655aafeb13e8a939a0cd071c9eb6fd}{C\+PL}} (int total\+\_\+parties, std\+::string parties, std\+::string candidates, int total\+\_\+seats, int total\+\_\+ballots)
+\begin{DoxyCompactList}\small\item\em Constructor for \mbox{\hyperlink{classCPL}{C\+PL}} class. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCPL_abbbcdafee9b1a5951730494fd3595439}\label{classCPL_abbbcdafee9b1a5951730494fd3595439}} 
+\mbox{\hyperlink{classCPL_abbbcdafee9b1a5951730494fd3595439}{$\sim$\+C\+PL}} ()
+\begin{DoxyCompactList}\small\item\em Destructor of \mbox{\hyperlink{classCPL}{C\+PL}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCPL_afcff63da606b9d811348a88408b8d87b}{Update\+Ballots}} ()
+\begin{DoxyCompactList}\small\item\em Function used to take in the ballots from input file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCPL_a63864d1b63645c4d7d1fe40d2b6b58da}{Initialize\+Party}} ()
+\begin{DoxyCompactList}\small\item\em Function used to initialize a \mbox{\hyperlink{classParty}{Party}} instance. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCPL_ab473755ee143ab6198d98a88b94de6e2}{Process\+Election}} (std\+::string \&top\+\_\+section, std\+::string \&bottom\+\_\+section)
+\begin{DoxyCompactList}\small\item\em Function where the main logic of \mbox{\hyperlink{classCPL}{C\+PL}} voting will take place. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCPL_aef921cf0e7a435b175688a0edf8c7403}\label{classCPL_aef921cf0e7a435b175688a0edf8c7403}} 
+void \mbox{\hyperlink{classCPL_aef921cf0e7a435b175688a0edf8c7403}{Process\+Whole\+Number\+Round}} ()
+\begin{DoxyCompactList}\small\item\em Subfunction of Process\+Election that performs calculations during the whole number round. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCPL_a943558277b040734164492660e337f64}\label{classCPL_a943558277b040734164492660e337f64}} 
+void \mbox{\hyperlink{classCPL_a943558277b040734164492660e337f64}{Process\+Remainder\+Round}} ()
+\begin{DoxyCompactList}\small\item\em Subfunction of Process\+Election that performs calculations during the remainder round. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classParty}{Party}} $\ast$ \mbox{\hyperlink{classCPL_a1b8f051ff9f31c6e76cfc63569d8b7a9}{Get\+Parties}} () const
+\begin{DoxyCompactList}\small\item\em Function used to extract the pointer to the stored \mbox{\hyperlink{classParty}{Party}} instance. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classCPL_a71b8f16fb9e8c1a9f4a0f16bd22c97c9}{Get\+Total\+Parties}} () const
+\begin{DoxyCompactList}\small\item\em Function used to extract the number of parties participating in the election. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classCPL_a414ea313d7f277898fbffdfe7f05cf59}{Get\+Total\+Seats}} () const
+\begin{DoxyCompactList}\small\item\em Function used to extract the number of seats available to be allocated. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classCPL_a1feb4944cfe4c3e36a66f4445dad853d}{Get\+Total\+Ballots}} () const
+\begin{DoxyCompactList}\small\item\em Function used to extract the number of ballots received for an entire election. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classCPL_a2b14ce55202830ed218a0541cce5ab75}{Get\+Quota}} () const
+\begin{DoxyCompactList}\small\item\em Function used to extract the quota value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCPL_adf4d1dacfa0b10dfc8d1d7ceb75fddce}{Assign\+Seats}} (int party\+\_\+index, int seats\+\_\+amount, bool remainder\+\_\+round)
+\begin{DoxyCompactList}\small\item\em Function used to assign seats to a desired party. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCPL_a59a407747b7f15114b266f21c0f341d1}{Assign\+Seats\+Whole\+Number}} (int party\+\_\+index, int seats\+\_\+amount)
+\begin{DoxyCompactList}\small\item\em Function used to assign seats to parties in the whole number round. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCPL_aa16c837816fa59d2c51e82e1d41ffb95}{Assign\+Seats\+Remainder}} (int party\+\_\+index)
+\begin{DoxyCompactList}\small\item\em Function used to assign seats to parties in the remainder round. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classCPL_ace242cabc0993464d162774ef0c08831}{Check\+Assignable}} (int party\+\_\+index, int seats\+\_\+amount)
+\begin{DoxyCompactList}\small\item\em Fucntion used to check whether a party can still receive more seats. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCPL_a0bf6b3cd849dc3b97d705c73b9f2e5a3}\label{classCPL_a0bf6b3cd849dc3b97d705c73b9f2e5a3}} 
+void \mbox{\hyperlink{classCPL_a0bf6b3cd849dc3b97d705c73b9f2e5a3}{Sort\+Parties}} ()
+\begin{DoxyCompactList}\small\item\em Function used to sort the parties based on their remaining votes count. \end{DoxyCompactList}\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{classCPL_aecf4ae2510829dabc968d90b6fd6be38}{Find\+Tied\+Parties}} (int index, int amount)
+\begin{DoxyCompactList}\small\item\em Function used to find all the parties that have the same votes count. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCPL_ad5296f27ce45039c9c1ed557af63831a}{Write\+Display\+Page}} (std\+::string \&top, std\+::string \&bottom)
+\begin{DoxyCompactList}\small\item\em Function used to modify the strings passed in the Process\+Election function. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCPL_a377aa757a78a79014ad95d143679f9ff}\label{classCPL_a377aa757a78a79014ad95d143679f9ff}} 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classCPL_a377aa757a78a79014ad95d143679f9ff}{To\+Vector\+String}} ()
+\begin{DoxyCompactList}\small\item\em Function used to convert a string to a vector of strings. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCPL_ae08b83ba122425a0691647769c8026af}\label{classCPL_ae08b83ba122425a0691647769c8026af}} 
+std\+::vector$<$ std\+::vector$<$ std\+::string $>$ $>$ \mbox{\hyperlink{classCPL_ae08b83ba122425a0691647769c8026af}{To\+Vector\+Vector\+String}} ()
+\begin{DoxyCompactList}\small\item\em Function used to convert a string to a vector of vector of strings. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCPL_abf7cf0d55a1870b5fda56c914d45a5da}\label{classCPL_abf7cf0d55a1870b5fda56c914d45a5da}} 
+void \mbox{\hyperlink{classCPL_abf7cf0d55a1870b5fda56c914d45a5da}{Write\+To\+Audit}} (int round)
+\begin{DoxyCompactList}\small\item\em Function used to write the election information and results into audit file. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCPL_a881fc2275e4cb54dbdb811144cc724da}\label{classCPL_a881fc2275e4cb54dbdb811144cc724da}} 
+void \mbox{\hyperlink{classCPL_a881fc2275e4cb54dbdb811144cc724da}{Write\+Header\+To\+Audit}} ()
+\begin{DoxyCompactList}\small\item\em Function used to write the header of the audit file. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCPL_a56c5be3424f0c8e58dae7935d94db478}\label{classCPL_a56c5be3424f0c8e58dae7935d94db478}} 
+void \mbox{\hyperlink{classCPL_a56c5be3424f0c8e58dae7935d94db478}{Write\+Whole\+Round\+To\+Audit}} ()
+\begin{DoxyCompactList}\small\item\em Function used to write the results after the first round to audit file. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCPL_adc3772ea491161d557866b25a659118f}\label{classCPL_adc3772ea491161d557866b25a659118f}} 
+void \mbox{\hyperlink{classCPL_adc3772ea491161d557866b25a659118f}{Write\+Remainder\+Round\+To\+Audit}} ()
+\begin{DoxyCompactList}\small\item\em Function used to write the final results to audit file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCPL_a65655aafeb13e8a939a0cd071c9eb6fd}\label{classCPL_a65655aafeb13e8a939a0cd071c9eb6fd}} 
+\index{CPL@{CPL}!CPL@{CPL}}
+\index{CPL@{CPL}!CPL@{CPL}}
+\doxysubsubsection{\texorpdfstring{CPL()}{CPL()}}
+{\footnotesize\ttfamily C\+P\+L\+::\+C\+PL (\begin{DoxyParamCaption}\item[{int}]{total\+\_\+parties,  }\item[{std\+::string}]{parties,  }\item[{std\+::string}]{candidates,  }\item[{int}]{total\+\_\+seats,  }\item[{int}]{total\+\_\+ballots }\end{DoxyParamCaption})}
+
+
+
+Constructor for \mbox{\hyperlink{classCPL}{C\+PL}} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em total\+\_\+parties} & Number of parties taking part in an election \\
+\hline
+{\em parties} & String of names of all parties \\
+\hline
+{\em candidates} & String of names of all candidates \\
+\hline
+{\em total\+\_\+seats} & Number of seats available to be assigned in this election \\
+\hline
+{\em total\+\_\+ballots} & Number of ballots received for an entire election \\
+\hline
+{\em ballots} & String of the ballots \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCPL_adf4d1dacfa0b10dfc8d1d7ceb75fddce}\label{classCPL_adf4d1dacfa0b10dfc8d1d7ceb75fddce}} 
+\index{CPL@{CPL}!AssignSeats@{AssignSeats}}
+\index{AssignSeats@{AssignSeats}!CPL@{CPL}}
+\doxysubsubsection{\texorpdfstring{AssignSeats()}{AssignSeats()}}
+{\footnotesize\ttfamily void C\+P\+L\+::\+Assign\+Seats (\begin{DoxyParamCaption}\item[{int}]{party\+\_\+index,  }\item[{int}]{seats\+\_\+amount,  }\item[{bool}]{remainder\+\_\+round }\end{DoxyParamCaption})}
+
+
+
+Function used to assign seats to a desired party. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em party\+\_\+index} & Index of the party who is going to receive the seats \\
+\hline
+{\em seats\+\_\+amount} & The number of seats to be assigned to the party \\
+\hline
+{\em remainder\+\_\+round} & A way to determine where this function is called \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCPL_aa16c837816fa59d2c51e82e1d41ffb95}\label{classCPL_aa16c837816fa59d2c51e82e1d41ffb95}} 
+\index{CPL@{CPL}!AssignSeatsRemainder@{AssignSeatsRemainder}}
+\index{AssignSeatsRemainder@{AssignSeatsRemainder}!CPL@{CPL}}
+\doxysubsubsection{\texorpdfstring{AssignSeatsRemainder()}{AssignSeatsRemainder()}}
+{\footnotesize\ttfamily void C\+P\+L\+::\+Assign\+Seats\+Remainder (\begin{DoxyParamCaption}\item[{int}]{party\+\_\+index }\end{DoxyParamCaption})}
+
+
+
+Function used to assign seats to parties in the remainder round. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em party\+\_\+index} & Index of the party to be given seats \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCPL_a59a407747b7f15114b266f21c0f341d1}\label{classCPL_a59a407747b7f15114b266f21c0f341d1}} 
+\index{CPL@{CPL}!AssignSeatsWholeNumber@{AssignSeatsWholeNumber}}
+\index{AssignSeatsWholeNumber@{AssignSeatsWholeNumber}!CPL@{CPL}}
+\doxysubsubsection{\texorpdfstring{AssignSeatsWholeNumber()}{AssignSeatsWholeNumber()}}
+{\footnotesize\ttfamily void C\+P\+L\+::\+Assign\+Seats\+Whole\+Number (\begin{DoxyParamCaption}\item[{int}]{party\+\_\+index,  }\item[{int}]{seats\+\_\+amount }\end{DoxyParamCaption})}
+
+
+
+Function used to assign seats to parties in the whole number round. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em party\+\_\+index} & Index of the party to be given seats \\
+\hline
+{\em seats\+\_\+amount} & Number of seats to be given \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCPL_ace242cabc0993464d162774ef0c08831}\label{classCPL_ace242cabc0993464d162774ef0c08831}} 
+\index{CPL@{CPL}!CheckAssignable@{CheckAssignable}}
+\index{CheckAssignable@{CheckAssignable}!CPL@{CPL}}
+\doxysubsubsection{\texorpdfstring{CheckAssignable()}{CheckAssignable()}}
+{\footnotesize\ttfamily int C\+P\+L\+::\+Check\+Assignable (\begin{DoxyParamCaption}\item[{int}]{party\+\_\+index,  }\item[{int}]{seats\+\_\+amount }\end{DoxyParamCaption})}
+
+
+
+Fucntion used to check whether a party can still receive more seats. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em party\+\_\+index} & Index of the party that is going to receive the seats \\
+\hline
+{\em seats\+\_\+amount} & The number of seats to be assigned to the party \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em 0} & if the party cannot receive any more seats \\
+\hline
+{\em 1} & if the party can receive all seats \\
+\hline
+{\em 2} & if the party can receive some seats \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{classCPL_aecf4ae2510829dabc968d90b6fd6be38}\label{classCPL_aecf4ae2510829dabc968d90b6fd6be38}} 
+\index{CPL@{CPL}!FindTiedParties@{FindTiedParties}}
+\index{FindTiedParties@{FindTiedParties}!CPL@{CPL}}
+\doxysubsubsection{\texorpdfstring{FindTiedParties()}{FindTiedParties()}}
+{\footnotesize\ttfamily std\+::vector$<$ int $>$ C\+P\+L\+::\+Find\+Tied\+Parties (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{int}]{amount }\end{DoxyParamCaption})}
+
+
+
+Function used to find all the parties that have the same votes count. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & An index defining where the search should start \\
+\hline
+{\em amount} & An integer representing the number of votes \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A vector containing all the parties that have the same desired votes count 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCPL_a1b8f051ff9f31c6e76cfc63569d8b7a9}\label{classCPL_a1b8f051ff9f31c6e76cfc63569d8b7a9}} 
+\index{CPL@{CPL}!GetParties@{GetParties}}
+\index{GetParties@{GetParties}!CPL@{CPL}}
+\doxysubsubsection{\texorpdfstring{GetParties()}{GetParties()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classParty}{Party}} $\ast$ C\+P\+L\+::\+Get\+Parties (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Function used to extract the pointer to the stored \mbox{\hyperlink{classParty}{Party}} instance. 
+
+\begin{DoxyReturn}{Returns}
+Pointer to the stored \mbox{\hyperlink{classParty}{Party}} instance 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCPL_a2b14ce55202830ed218a0541cce5ab75}\label{classCPL_a2b14ce55202830ed218a0541cce5ab75}} 
+\index{CPL@{CPL}!GetQuota@{GetQuota}}
+\index{GetQuota@{GetQuota}!CPL@{CPL}}
+\doxysubsubsection{\texorpdfstring{GetQuota()}{GetQuota()}}
+{\footnotesize\ttfamily float C\+P\+L\+::\+Get\+Quota (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Function used to extract the quota value. 
+
+\begin{DoxyReturn}{Returns}
+A float representing the result from dividing total\+\_\+ballots by total\+\_\+seats 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCPL_a1feb4944cfe4c3e36a66f4445dad853d}\label{classCPL_a1feb4944cfe4c3e36a66f4445dad853d}} 
+\index{CPL@{CPL}!GetTotalBallots@{GetTotalBallots}}
+\index{GetTotalBallots@{GetTotalBallots}!CPL@{CPL}}
+\doxysubsubsection{\texorpdfstring{GetTotalBallots()}{GetTotalBallots()}}
+{\footnotesize\ttfamily int C\+P\+L\+::\+Get\+Total\+Ballots (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Function used to extract the number of ballots received for an entire election. 
+
+\begin{DoxyReturn}{Returns}
+An integer representing the amount 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCPL_a71b8f16fb9e8c1a9f4a0f16bd22c97c9}\label{classCPL_a71b8f16fb9e8c1a9f4a0f16bd22c97c9}} 
+\index{CPL@{CPL}!GetTotalParties@{GetTotalParties}}
+\index{GetTotalParties@{GetTotalParties}!CPL@{CPL}}
+\doxysubsubsection{\texorpdfstring{GetTotalParties()}{GetTotalParties()}}
+{\footnotesize\ttfamily int C\+P\+L\+::\+Get\+Total\+Parties (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Function used to extract the number of parties participating in the election. 
+
+\begin{DoxyReturn}{Returns}
+An integer representing the amount 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCPL_a414ea313d7f277898fbffdfe7f05cf59}\label{classCPL_a414ea313d7f277898fbffdfe7f05cf59}} 
+\index{CPL@{CPL}!GetTotalSeats@{GetTotalSeats}}
+\index{GetTotalSeats@{GetTotalSeats}!CPL@{CPL}}
+\doxysubsubsection{\texorpdfstring{GetTotalSeats()}{GetTotalSeats()}}
+{\footnotesize\ttfamily int C\+P\+L\+::\+Get\+Total\+Seats (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Function used to extract the number of seats available to be allocated. 
+
+\begin{DoxyReturn}{Returns}
+An integer representing the amount 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCPL_a63864d1b63645c4d7d1fe40d2b6b58da}\label{classCPL_a63864d1b63645c4d7d1fe40d2b6b58da}} 
+\index{CPL@{CPL}!InitializeParty@{InitializeParty}}
+\index{InitializeParty@{InitializeParty}!CPL@{CPL}}
+\doxysubsubsection{\texorpdfstring{InitializeParty()}{InitializeParty()}}
+{\footnotesize\ttfamily void C\+P\+L\+::\+Initialize\+Party (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function used to initialize a \mbox{\hyperlink{classParty}{Party}} instance. 
+
+\mbox{\hyperlink{classParty}{Party}}\textquotesingle{}s constructor needs\+:
+\begin{DoxyEnumerate}
+\item std\+::vector$<$std\+::string$>$ parties\+\_\+names
+\item std\+::vector$<$std\+::vector$<$std\+::string$>$$>$ candidates\+\_\+names
+\item std\+::vector$<$int$>$ available\+\_\+candidates
+\item std\+::vector$<$int$>$ votes\+\_\+amounts
+\item std\+::vector$<$int$>$ assigned\+\_\+seats
+\end{DoxyEnumerate}\mbox{\Hypertarget{classCPL_ab473755ee143ab6198d98a88b94de6e2}\label{classCPL_ab473755ee143ab6198d98a88b94de6e2}} 
+\index{CPL@{CPL}!ProcessElection@{ProcessElection}}
+\index{ProcessElection@{ProcessElection}!CPL@{CPL}}
+\doxysubsubsection{\texorpdfstring{ProcessElection()}{ProcessElection()}}
+{\footnotesize\ttfamily void C\+P\+L\+::\+Process\+Election (\begin{DoxyParamCaption}\item[{std\+::string \&}]{top\+\_\+section,  }\item[{std\+::string \&}]{bottom\+\_\+section }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Function where the main logic of \mbox{\hyperlink{classCPL}{C\+PL}} voting will take place. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em top\+\_\+section} & A string holding the information related to the election, for tabulation purpose \\
+\hline
+{\em bottom\+\_\+section} & A string holding the result of the election, for tabulation purpose \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classElection_af8fcefff3f4384b48fedcb0bcee5fa48}{Election}}.
+
+\mbox{\Hypertarget{classCPL_afcff63da606b9d811348a88408b8d87b}\label{classCPL_afcff63da606b9d811348a88408b8d87b}} 
+\index{CPL@{CPL}!UpdateBallots@{UpdateBallots}}
+\index{UpdateBallots@{UpdateBallots}!CPL@{CPL}}
+\doxysubsubsection{\texorpdfstring{UpdateBallots()}{UpdateBallots()}}
+{\footnotesize\ttfamily void C\+P\+L\+::\+Update\+Ballots (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function used to take in the ballots from input file. 
+
+Line 1 \+: \mbox{\hyperlink{classElection}{Election}} type Line 2 \+: Number of parties Line 3 \+: Parties Line 4 -\/ \# parties \+: Candidates Line \# parties + 1 -\/ End of file \+: Ballots\mbox{\Hypertarget{classCPL_ad5296f27ce45039c9c1ed557af63831a}\label{classCPL_ad5296f27ce45039c9c1ed557af63831a}} 
+\index{CPL@{CPL}!WriteDisplayPage@{WriteDisplayPage}}
+\index{WriteDisplayPage@{WriteDisplayPage}!CPL@{CPL}}
+\doxysubsubsection{\texorpdfstring{WriteDisplayPage()}{WriteDisplayPage()}}
+{\footnotesize\ttfamily void C\+P\+L\+::\+Write\+Display\+Page (\begin{DoxyParamCaption}\item[{std\+::string \&}]{top,  }\item[{std\+::string \&}]{bottom }\end{DoxyParamCaption})}
+
+
+
+Function used to modify the strings passed in the Process\+Election function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em top} & A string holding the information related to the election \\
+\hline
+{\em bottom} & A string holding the result of the election \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/cpl.\+h\item 
+src/cpl.\+cc\end{DoxyCompactItemize}

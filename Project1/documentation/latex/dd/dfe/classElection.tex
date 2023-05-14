@@ -1,0 +1,155 @@
+\hypertarget{classElection}{}\doxysection{Election Class Reference}
+\label{classElection}\index{Election@{Election}}
+
+
+Inheritance diagram for Election\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classElection_a5716fcfc390fe42d3cce8ae8eac51ee5}\label{classElection_a5716fcfc390fe42d3cce8ae8eac51ee5}} 
+virtual \mbox{\hyperlink{classElection_a5716fcfc390fe42d3cce8ae8eac51ee5}{$\sim$\+Election}} ()
+\begin{DoxyCompactList}\small\item\em Virtual destructor to destroy derived classes when base class is destroyed. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classElection_af8fcefff3f4384b48fedcb0bcee5fa48}\label{classElection_af8fcefff3f4384b48fedcb0bcee5fa48}} 
+virtual void \mbox{\hyperlink{classElection_af8fcefff3f4384b48fedcb0bcee5fa48}{Process\+Election}} (std\+::string \&results\+\_\+top, std\+::string \&results\+\_\+table)
+\begin{DoxyCompactList}\small\item\em Virtual function that is going to be overloaded in \mbox{\hyperlink{classIR}{IR}} and \mbox{\hyperlink{classCPL}{C\+PL}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classElection_a2885b5c9b294d7be0fe4b57c82a38c1f}{Set\+File\+Paths}} (std\+::string in\+\_\+nm, std\+::string aud\+\_\+nm)
+\begin{DoxyCompactList}\small\item\em Set the File Path for input and audit. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classElection_abff3fa0325dfc76aa91de9db7d6f78aa}{Flip\+Coin}} (int count)
+\begin{DoxyCompactList}\small\item\em Function used to perform a fair coin toss to break tied results. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classElection_a79576bcb5817388468f9688ea29b1d0d}{Create\+Audit\+File}} ()
+\begin{DoxyCompactList}\small\item\em Function used to intialize an empty audit file. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classElection_acb6adec43681eb900740e053812fe57f}{Write\+Audit\+File}} (std\+::string write\+\_\+data)
+\begin{DoxyCompactList}\small\item\em Functioned used to write into the audit file that has been created previously. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ifstream \mbox{\hyperlink{classElection_a67607c34c6da5687b6e9ff2adf49eba8}{input\+\_\+file}}
+\begin{DoxyCompactList}\small\item\em input file stream object \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classElection_a34ffe8b3953ab120f3a5534075d60b19}{audit\+\_\+name}}
+\begin{DoxyCompactList}\small\item\em name and extension of audit file \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classElection_a98d837b459f243ea7d0a453854ada8e2}{input\+\_\+name}}
+\begin{DoxyCompactList}\small\item\em name and extension of input file \end{DoxyCompactList}\item 
+std\+::ofstream \mbox{\hyperlink{classElection_a0970a1328045e2b4847551685b7c14b8}{audit\+\_\+file}}
+\begin{DoxyCompactList}\small\item\em audit file stream object \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classElection_a79576bcb5817388468f9688ea29b1d0d}\label{classElection_a79576bcb5817388468f9688ea29b1d0d}} 
+\index{Election@{Election}!CreateAuditFile@{CreateAuditFile}}
+\index{CreateAuditFile@{CreateAuditFile}!Election@{Election}}
+\doxysubsubsection{\texorpdfstring{CreateAuditFile()}{CreateAuditFile()}}
+{\footnotesize\ttfamily int Election\+::\+Create\+Audit\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function used to intialize an empty audit file. 
+
+\begin{DoxyReturn}{Returns}
+0 if succeeded, -\/1 if failed for any reason 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classElection_abff3fa0325dfc76aa91de9db7d6f78aa}\label{classElection_abff3fa0325dfc76aa91de9db7d6f78aa}} 
+\index{Election@{Election}!FlipCoin@{FlipCoin}}
+\index{FlipCoin@{FlipCoin}!Election@{Election}}
+\doxysubsubsection{\texorpdfstring{FlipCoin()}{FlipCoin()}}
+{\footnotesize\ttfamily int Election\+::\+Flip\+Coin (\begin{DoxyParamCaption}\item[{int}]{count }\end{DoxyParamCaption})}
+
+
+
+Function used to perform a fair coin toss to break tied results. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em count} & Number of entities to be chosen from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A random index within \mbox{[}0, count) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classElection_a2885b5c9b294d7be0fe4b57c82a38c1f}\label{classElection_a2885b5c9b294d7be0fe4b57c82a38c1f}} 
+\index{Election@{Election}!SetFilePaths@{SetFilePaths}}
+\index{SetFilePaths@{SetFilePaths}!Election@{Election}}
+\doxysubsubsection{\texorpdfstring{SetFilePaths()}{SetFilePaths()}}
+{\footnotesize\ttfamily void Election\+::\+Set\+File\+Paths (\begin{DoxyParamCaption}\item[{std\+::string}]{in\+\_\+nm,  }\item[{std\+::string}]{aud\+\_\+nm }\end{DoxyParamCaption})}
+
+
+
+Set the File Path for input and audit. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+\_\+name} & filename and extension for input ballot file \\
+\hline
+{\em audit\+\_\+file} & filename and extension for audit file \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classElection_acb6adec43681eb900740e053812fe57f}\label{classElection_acb6adec43681eb900740e053812fe57f}} 
+\index{Election@{Election}!WriteAuditFile@{WriteAuditFile}}
+\index{WriteAuditFile@{WriteAuditFile}!Election@{Election}}
+\doxysubsubsection{\texorpdfstring{WriteAuditFile()}{WriteAuditFile()}}
+{\footnotesize\ttfamily int Election\+::\+Write\+Audit\+File (\begin{DoxyParamCaption}\item[{std\+::string}]{write\+\_\+data }\end{DoxyParamCaption})}
+
+
+
+Functioned used to write into the audit file that has been created previously. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em write\+\_\+data} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if succeeded, -\/1 if failed for any reason 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classElection_a0970a1328045e2b4847551685b7c14b8}\label{classElection_a0970a1328045e2b4847551685b7c14b8}} 
+\index{Election@{Election}!audit\_file@{audit\_file}}
+\index{audit\_file@{audit\_file}!Election@{Election}}
+\doxysubsubsection{\texorpdfstring{audit\_file}{audit\_file}}
+{\footnotesize\ttfamily std\+::ofstream Election\+::audit\+\_\+file\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+audit file stream object 
+
+\mbox{\Hypertarget{classElection_a34ffe8b3953ab120f3a5534075d60b19}\label{classElection_a34ffe8b3953ab120f3a5534075d60b19}} 
+\index{Election@{Election}!audit\_name@{audit\_name}}
+\index{audit\_name@{audit\_name}!Election@{Election}}
+\doxysubsubsection{\texorpdfstring{audit\_name}{audit\_name}}
+{\footnotesize\ttfamily std\+::string Election\+::audit\+\_\+name\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+name and extension of audit file 
+
+\mbox{\Hypertarget{classElection_a67607c34c6da5687b6e9ff2adf49eba8}\label{classElection_a67607c34c6da5687b6e9ff2adf49eba8}} 
+\index{Election@{Election}!input\_file@{input\_file}}
+\index{input\_file@{input\_file}!Election@{Election}}
+\doxysubsubsection{\texorpdfstring{input\_file}{input\_file}}
+{\footnotesize\ttfamily std\+::ifstream Election\+::input\+\_\+file}
+
+
+
+input file stream object 
+
+\mbox{\Hypertarget{classElection_a98d837b459f243ea7d0a453854ada8e2}\label{classElection_a98d837b459f243ea7d0a453854ada8e2}} 
+\index{Election@{Election}!input\_name@{input\_name}}
+\index{input\_name@{input\_name}!Election@{Election}}
+\doxysubsubsection{\texorpdfstring{input\_name}{input\_name}}
+{\footnotesize\ttfamily std\+::string Election\+::input\+\_\+name\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+name and extension of input file 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/election.\+h\item 
+src/election.\+cc\end{DoxyCompactItemize}

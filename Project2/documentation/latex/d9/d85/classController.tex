@@ -1,0 +1,140 @@
+\hypertarget{classController}{}\doxysection{Controller Class Reference}
+\label{classController}\index{Controller@{Controller}}
+
+
+\mbox{\hyperlink{classController}{Controller}} class. Manages inteactions between user interface and election processing.  
+
+
+
+
+{\ttfamily \#include $<$controller.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classController_a95c56822d667e94b031451729ce069a9}\label{classController_a95c56822d667e94b031451729ce069a9}} 
+\mbox{\hyperlink{classController_a95c56822d667e94b031451729ce069a9}{Controller}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classController}{Controller}} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classController_a0ab87934c4f7a266cfdb86e0f36bc1b5}\label{classController_a0ab87934c4f7a266cfdb86e0f36bc1b5}} 
+\mbox{\hyperlink{classController_a0ab87934c4f7a266cfdb86e0f36bc1b5}{$\sim$\+Controller}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classController}{Controller}} object and the election instance with it. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classController_a3dc49a54fd5a8c0afb1b7ceb08835469}{Get\+Ballots\+Number}} ()
+\begin{DoxyCompactList}\small\item\em Gets ballots\+\_\+number\+\_\+. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classController_a585ba23e9db8adf32cf0eed5df2dfd55}{Set\+Cli}} (\mbox{\hyperlink{classCli}{Cli}} \&cli, std\+::string arg\+\_\+date, std\+::string arg\+\_\+file\+\_\+names\mbox{[}$\,$\mbox{]}, int n\+\_\+files)
+\begin{DoxyCompactList}\small\item\em Set the pointer to the C\+LI object and take in optional string parameters for run arguments with input file name and date already entered. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classController_ab0e0d99108bb79ed51f5becdf40af153}{Handle\+Date\+String}} (std\+::string date)
+\begin{DoxyCompactList}\small\item\em Using certain characters in a file name can break the audit file. This function replaces them. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classController_a3417d09539e97291c525eac8b4b84ab5}{Read\+Election\+Type}} (std\+::string filenames\mbox{[}$\,$\mbox{]}, std\+::string date, int num\+\_\+files\+\_\+in)
+\begin{DoxyCompactList}\small\item\em Verifies the user inputted file can be opened and reads the first line from the file (designating the election type) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classController_a82ba22b51541b86ceea782d93faf67da}{Read\+Header}} ()
+\begin{DoxyCompactList}\small\item\em Reads header(s) for election file, depending on election mode, and passes information to interface. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classController_ae8736763c4bb2dd220452c7439ab6ce3}{Process\+Election}} ()
+\begin{DoxyCompactList}\small\item\em Sets loading screen, creates election object based on previously gleaned information, signals election object to process the election, and calls interface to display results. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classController}{Controller}} class. Manages inteactions between user interface and election processing. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classController_a3dc49a54fd5a8c0afb1b7ceb08835469}\label{classController_a3dc49a54fd5a8c0afb1b7ceb08835469}} 
+\index{Controller@{Controller}!GetBallotsNumber@{GetBallotsNumber}}
+\index{GetBallotsNumber@{GetBallotsNumber}!Controller@{Controller}}
+\doxysubsubsection{\texorpdfstring{GetBallotsNumber()}{GetBallotsNumber()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ Controller\+::\+Get\+Ballots\+Number (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets ballots\+\_\+number\+\_\+. 
+
+\begin{DoxyReturn}{Returns}
+a vector of strings detailing the lengths of each ballot 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classController_ab0e0d99108bb79ed51f5becdf40af153}\label{classController_ab0e0d99108bb79ed51f5becdf40af153}} 
+\index{Controller@{Controller}!HandleDateString@{HandleDateString}}
+\index{HandleDateString@{HandleDateString}!Controller@{Controller}}
+\doxysubsubsection{\texorpdfstring{HandleDateString()}{HandleDateString()}}
+{\footnotesize\ttfamily std\+::string Controller\+::\+Handle\+Date\+String (\begin{DoxyParamCaption}\item[{std\+::string}]{date }\end{DoxyParamCaption})}
+
+
+
+Using certain characters in a file name can break the audit file. This function replaces them. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em date} & the original date string to correct as needed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::string with the corrected file name 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classController_ae8736763c4bb2dd220452c7439ab6ce3}\label{classController_ae8736763c4bb2dd220452c7439ab6ce3}} 
+\index{Controller@{Controller}!ProcessElection@{ProcessElection}}
+\index{ProcessElection@{ProcessElection}!Controller@{Controller}}
+\doxysubsubsection{\texorpdfstring{ProcessElection()}{ProcessElection()}}
+{\footnotesize\ttfamily void Controller\+::\+Process\+Election (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Sets loading screen, creates election object based on previously gleaned information, signals election object to process the election, and calls interface to display results. 
+
+\mbox{\hyperlink{classElection}{Election}} is processed, only thing left to do is wrap up by sending the interface results information for it to display\mbox{\Hypertarget{classController_a3417d09539e97291c525eac8b4b84ab5}\label{classController_a3417d09539e97291c525eac8b4b84ab5}} 
+\index{Controller@{Controller}!ReadElectionType@{ReadElectionType}}
+\index{ReadElectionType@{ReadElectionType}!Controller@{Controller}}
+\doxysubsubsection{\texorpdfstring{ReadElectionType()}{ReadElectionType()}}
+{\footnotesize\ttfamily bool Controller\+::\+Read\+Election\+Type (\begin{DoxyParamCaption}\item[{std\+::string}]{filenames\mbox{[}$\,$\mbox{]},  }\item[{std\+::string}]{date,  }\item[{int}]{num\+\_\+files\+\_\+in }\end{DoxyParamCaption})}
+
+
+
+Verifies the user inputted file can be opened and reads the first line from the file (designating the election type) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filenames} & user inputted filename(s) to attempt to open \\
+\hline
+{\em date} & user inputted date to save in controller for later \\
+\hline
+{\em num\+\_\+files\+\_\+in} & integer indicating the number of files the user has passed in the command line \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 0 on success, -\/1 on failure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classController_a82ba22b51541b86ceea782d93faf67da}\label{classController_a82ba22b51541b86ceea782d93faf67da}} 
+\index{Controller@{Controller}!ReadHeader@{ReadHeader}}
+\index{ReadHeader@{ReadHeader}!Controller@{Controller}}
+\doxysubsubsection{\texorpdfstring{ReadHeader()}{ReadHeader()}}
+{\footnotesize\ttfamily void Controller\+::\+Read\+Header (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Reads header(s) for election file, depending on election mode, and passes information to interface. 
+
+Reads file header, then progresses program flow to \char`\"{}stage 2\char`\"{} and transfers control authority to the interface with a call to Set\+Layout2
+
+Reads file header, then progresses program flow to \char`\"{}stage 2\char`\"{} and transfers control authority to the interface with a call to Set\+Layout2\mbox{\Hypertarget{classController_a585ba23e9db8adf32cf0eed5df2dfd55}\label{classController_a585ba23e9db8adf32cf0eed5df2dfd55}} 
+\index{Controller@{Controller}!SetCli@{SetCli}}
+\index{SetCli@{SetCli}!Controller@{Controller}}
+\doxysubsubsection{\texorpdfstring{SetCli()}{SetCli()}}
+{\footnotesize\ttfamily void Controller\+::\+Set\+Cli (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCli}{Cli}} \&}]{cli,  }\item[{std\+::string}]{arg\+\_\+date,  }\item[{std\+::string}]{arg\+\_\+file\+\_\+names\mbox{[}$\,$\mbox{]},  }\item[{int}]{n\+\_\+files }\end{DoxyParamCaption})}
+
+
+
+Set the pointer to the C\+LI object and take in optional string parameters for run arguments with input file name and date already entered. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cli} & cli instance to link with \\
+\hline
+{\em arg\+\_\+date} & optional string for command argument for date, can be empty (\char`\"{}\char`\"{}) \\
+\hline
+{\em arg\+\_\+file\+\_\+name} & optional string for command argument for input file name, can be empty (\char`\"{}\char`\"{}) \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/controller.\+h\item 
+src/controller.\+cc\end{DoxyCompactItemize}
